@@ -1,0 +1,224 @@
+body {
+  background-color: #fff;
+  font-family: Montserrat, Roboto, sans-serif;
+  font-size: 16px;
+  color: #000;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 59px;
+}
+
+p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  width: 600px;
+  margin: auto;
+}
+
+.button {
+  border: none;
+  background: transparent;
+}
+
+.button__tel {
+  font-weight: 900;
+}
+
+.button__icon {
+  display: inline-block;
+  height: 33px;
+  width: 33px;
+  background: linear-gradient(287.74deg, #F58656 8.52%, #FE5626 92.72%);
+  -webkit-box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26);
+          box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26);
+  border-radius: 59px;
+  margin-right: 16px;
+}
+
+.button__pluse {
+  height: 33px;
+  width: 33px;
+  background-color: #fff;
+  border-radius: 17px;
+  font-size: 18px;
+  color: #F87848;
+}
+
+.color-orange {
+  color: #F87848;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.header {
+  background-color: #F0F5FB;
+  padding: 25px 0;
+}
+
+.header__nav ul {
+  height: 100%;
+  margin: 0;
+}
+
+.header__nav ul li {
+  list-style: none;
+  display: inline;
+  margin-right: 40px;
+}
+
+.header__nav ul li a {
+  text-decoration: none;
+  color: #000;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.header__nav ul li a:hover {
+  text-decoration: underline;
+  color: #F87848;
+}
+
+.header__today-time {
+  position: relative;
+  margin-right: 40px;
+}
+
+.header__today-time::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: -18px;
+  margin-top: -4px;
+  height: 8px;
+  width: 8px;
+  background-color: #46CB72;
+  border-radius: 4px;
+}
+
+.main {
+  padding-top: 80px;
+  background-color: #F0F5FB;
+}
+
+.main h2 {
+  margin-bottom: 18px;
+}
+
+.main__img {
+  width: 100%;
+  height: 100%;
+}
+
+.main .img__potate {
+  width: 133px;
+  position: absolute;
+  top: 150px;
+  left: -30px;
+  z-index: 2;
+}
+
+.main .img__potate-line {
+  width: 90px;
+  position: absolute;
+  top: 145px;
+  left: 9px;
+  z-index: 1;
+}
+
+.main .img__oyster-line {
+  width: 45px;
+  position: absolute;
+  top: 50px;
+  right: 24px;
+  z-index: 1;
+}
+
+.main .img__cucumbers {
+  width: 224px;
+  position: absolute;
+  top: 200px;
+  right: 30px;
+  z-index: 1;
+}
+
+.main .img__garlic {
+  width: 100px;
+  position: absolute;
+  top: 516px;
+  left: 100px;
+  z-index: 2;
+}
+
+.main .img__garlic-line {
+  width: 100px;
+  position: absolute;
+  top: 550px;
+  left: 124px;
+  z-index: 1;
+}
+
+.main .img__pizza-line {
+  width: 136px;
+  position: absolute;
+  top: 560px;
+  right: 34px;
+  z-index: 1;
+}
+
+.main .img__seed {
+  width: 136px;
+  position: absolute;
+  top: 416px;
+  left: 250px;
+  z-index: 1;
+}
+
+.main__product {
+  display: block;
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
+
+.main__product .product__img {
+  width: 800px;
+  position: absolute;
+  z-index: 2;
+  bottom: -100px;
+  left: 50%;
+  margin-left: -300px;
+}
+
+.main__product .product__info {
+  position: relative;
+}
+
+.main__product .product__info .button, .main__product .product__info img, .main__product .product__info .info__text {
+  position: absolute;
+  top: 120px;
+  right: 120px;
+}
+
+.main__product .product__info .button {
+  top: 201px;
+  right: 461px;
+  z-index: 3;
+}
+
+.main__product .product__info img {
+  top: 152px;
+  right: 307px;
+  z-index: 3;
+}
+
+.main__product .product__info .info__text {
+  width: 200px;
+  font-size: 16px;
+  top: 125px;
+  right: 81px;
+}
