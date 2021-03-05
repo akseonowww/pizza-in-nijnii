@@ -1,8 +1,21 @@
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    transition: all .3s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+
 body
     background-color: #fff
     font-family: Montserrat, Roboto, sans-serif
     font-size: 16px
+    overflow-x: hidden
     color: #000
+
+h1
+    font-weight: 600
+    font-size: 24px
+    line-height: 82.9%
+    letter-spacing: -0.005em
 
 h2
     font-weight: bold
@@ -13,12 +26,18 @@ p
     font-weight: normal
     font-size: 18px
     line-height: 140%
-    width: 600px
+    // width: 600px
     margin: auto
+
+// --------------------------  Default  ------------------
 
 .button
     border: none
     background: transparent
+    opacity: .9
+
+    &:hover
+        opacity: 1
 
     &__tel
         font-weight: 900
@@ -32,6 +51,12 @@ p
         border-radius: 59px
         margin-right: 16px
 
+        &_fill
+            background-color: #5c5c5c
+            height: 60px
+            width: 60px
+            margin-top: 44px
+
     &__pluse
         height: 33px
         width: 33px
@@ -40,25 +65,51 @@ p
         font-size: 18px
         color: #F87848
 
+    &__fill
+        height: 60px
+        font-weight: 900
+        background: linear-gradient(180deg, #FE5626 0%, #F23F0E 100%), #59AAF1
+        box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26)
+        border-radius: 59px
+
+.input
+    height: 60px
+    border-radius: 30px
+    border: 2px solid #DBDDE6
+    padding: 0 10px 0 30px
+
+    &:focus
+        outline: none
+
 .color
     &-orange
         color: #F87848
         font-weight: 800
         text-transform: uppercase
 
-// Header
+.logo
+    &__img
+        margin-right: 12px
+
+    
+
+// --------------------------  Header  ------------------
 .header
     background-color: #F0F5FB
-    padding: 25px 0
+    padding: 25px 2vw
+    font-size: 1rem
 
     &__nav
         ul
             height: 100%
             margin: 0
+            padding: 0
+
             li
                 list-style: none
                 display: inline
-                margin-right: 40px
+                margin: 0
+                margin-right: 2.5em
 
                 a
                     text-decoration: none
@@ -71,7 +122,7 @@ p
 
     &__today-time
         position: relative
-        margin-right: 40px
+        margin-right: 2.5vw
 
         &::after
             content: ''
@@ -85,13 +136,16 @@ p
             background-color: #46CB72
             border-radius: 4px
 
-// Main
+// --------------------------  Main  ------------------
 .main
-    padding-top: 80px
+    padding-top: 10vh
     background-color: #F0F5FB
 
     h2
         margin-bottom: 18px
+
+    p
+        width: 60%
 
     &__img
         width: 100%
@@ -158,12 +212,11 @@ p
         display: block
         height: 500px
         width: 100%
-        // background-color: red
         position: relative
 
         .product
             &__img
-                width: 800px
+                width: 70%
                 position: absolute
                 z-index: 2
                 bottom: -100px
@@ -171,27 +224,306 @@ p
                 margin-left: -300px
 
             &__info
-                position: relative
-                
+                position: absolute
+                // border: 1px solid red
+                right: 0
+                top: 0
+
                 .button, img, .info__text
                     position: absolute
                     top: 120px
-                    right: 120px
+                    right: 0
 
                 .button
                     top: 201px
-                    right: 461px
+                    right: 377px
                     z-index: 3
 
                 img
-                    top: 152px
-                    right: 307px
+                    top: 153px
+                    right: 222px
                     z-index: 3
 
                 .info__text
                     width: 200px
                     font-size: 16px
                     top: 125px
-                    right: 81px
+                    right: 10px
+                    margin: 0
+                    text-align: right
 
+// --------------------------  Catalog  ------------------
+.catalog-top
+    padding: 140px 0
+    position: relative
 
+    .basket
+        position: absolute
+        top: 144px
+        right: 44px
+
+        &__button
+            position: absolute
+            top: 50%
+            margin-top: -40px
+            right: 0
+            height: 80px
+            width: 80px
+            border-radius: 40px
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.08)
+
+        &__number
+            position: absolute
+            bottom: -6px
+            right: -6px
+            height: 30px
+            width: 30px
+            background-color: #F58656
+            border-radius: 15px
+            color: #fff
+            font-weight: 700
+
+        .basket__price
+            position: absolute
+            top: 50%
+            margin-top: -22px
+            left: -200px
+            // display: none
+            background-color: #3F3F3F
+            color: #fff
+            height: 44px
+            width: 100px
+            border-radius: 8px
+            font-weight: 600
+            transform: all .5s
+
+            span
+                position: relative
+                z-index: 2
+
+            .triangle
+                position: absolute
+                z-index: 1
+                top: 50%
+                margin-top: -22px
+                right: -12px
+                width: 0
+                height: 0
+                border-bottom: 44px solid #3F3F3F
+                border-left: 22px solid transparent
+                border-right: 22px solid transparent
+                transform: rotate(90deg)
+
+    ul
+        width: 100%
+        justify-content: center
+        margin: 50px auto
+        border: none
+
+        .nav-link
+            border-top-left-radius: 0
+            border-top-right-radius: 0
+            border-radius: 45px
+            display: inline-flex
+            align-items: center
+            justify-content: center
+            border: none
+            background-color: #ECEEF6
+            color: #151515
+            width: 155px
+            height: 55px
+            font-weight: 600
+            margin: 0 1vw
+
+            &.active
+                background-color: #59AAF1
+                color: #fff
+                box-shadow: 0 0 20px 5px #9fd2ff60
+
+                &:hover
+                    background-color: #59AAF1
+                    color: #fff
+                    box-shadow: 0 0 20px 5px #9fd2ff60
+
+            &:hover
+                background-color: #eaf5ff
+                color: #111111
+                box-shadow: 0 0 20px 5px #f1f9ff60
+
+    .product
+        &-card
+            position: relative
+            margin-bottom: 22px
+
+            &__img
+                margin: auto
+                margin-right: -30px
+                margin-top: 10px
+
+                img
+                    width: 90%
+
+        &-card__container
+            cursor: pointer
+            width: 100%
+            position: relative
+            border: 2px solid #dbdde6
+            border-radius: 15px
+            padding: 1px 22px 22px 22px
+            overflow: hidden
+            transition: all .3s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+
+            &:hover
+                transform: scale(1.02)
+                border: 2px solid ffc9b1
+                background-color: #fffcfb
+
+                .button__add-product
+                    border: 2px solid #d3d3d3
+                    background-color: #f8f8f8
+
+                    &:hover
+                        border: 2px solid transparent
+                        background-color: #ffcdbc
+
+        &__text, &__info
+            width: 100%
+            font-size: 12px
+            text-align: left
+            line-height: 16px
+
+            strong
+                font-size: 16px
+
+        &__footer
+            // display: flex
+            // justify-content: space-between
+            margin-top: 18px
+
+        &__price
+            display: inline-block
+            color: #121146
+            font-weight: 400
+            font-size: 28px
+            margin-bottom: 6px
+
+            &::after
+                content: ' руб.'
+                font-size: 16px
+
+    .button__add-product
+        display: flex
+        justify-content: center
+        align-items: center
+
+        border-radius: 21px
+        border: 2px solid #ECEEF6
+        padding-right: 10px
+        height: 32px
+        width: 100%
+        font-size: 13px
+        margin-top: 4px
+
+        .button__icon_white
+            height: 33px
+            width: 33px
+
+            img
+                height: 50%
+
+// --------------------------  Inst  ------------------
+.inst-beta
+    position: relative
+    margin-bottom: 120px
+    // height: 23em
+    width: 120vw
+    margin-left: -10vw
+
+    .inst
+
+        &__post
+            position: relative
+            height: 100%
+            width: 100%
+            margin: 0 1vw
+
+            &::before
+                content: ''
+                display: block
+                position: absolute
+                z-index: 2
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                background-color: rgba(37, 77, 124, .4)
+
+            img
+                width: 100%
+                height: 100%
+
+        &__link
+            position: absolute
+            z-index: 4
+            top: 50%
+            left: 50%
+            margin-left: -240px
+            margin-top: -90px
+            height: 180px
+            width: 480px
+            background: linear-gradient(45.04deg, #FD9924 -51.05%, #F65B16 134.89%)
+            box-shadow: 0px 70px 90px rgba(253, 55, 36, 0.2), 0px 35px 50px rgba(253, 55, 36, 0.2), 0px 20px 25px rgba(253, 55, 36, 0.2)
+            border-radius: 15px
+            padding: 20px
+
+        &__text
+            display: block
+            color: #fff
+            text-decoration: none
+            width: 100%
+            height: 100%
+            border: 2px solid rgba(180, 180, 180, .1)
+            border-radius: 15px
+            font-size: 24px
+
+        &:hover
+            color: #fff
+
+// --------------------------  Phobe  ------------------
+.tel-phone
+    padding: 100px 0
+    background: #F0F5FB
+    position: relative
+    padding-bottom: 280px
+
+    .form
+        width: 80%
+        margin: 0 auto
+        margin-top: 40px
+
+    .button, .input
+        margin: 0 20px
+        width: 100%
+
+    .button
+        color: #fff
+
+        i
+            margin-left: 12px
+            font-size: 24px
+            font-weight: 900
+
+    &__img
+        position: absolute
+        bottom: -60px
+        left: 25%
+        margin: auto
+        margin-bottom: -20px
+
+// --------------------------  Footer  ------------------
+.footer
+    padding: 70px
+
+.header__logo
+    img
+        height: 60px

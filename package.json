@@ -1,0 +1,22 @@
+{
+  "name": "pizza-in-nijnii",
+  "version": "1.0.0",
+  "description": "Лендинг пицерии, которая доставляет пицу по Нижнему Новгороду.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akseonowww/pizza-in-nijnii.git"
+  },
+  "author": "Akseonowww Ruslan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akseonowww/pizza-in-nijnii/issues"
+  },
+  "homepage": "https://github.com/akseonowww/pizza-in-nijnii#readme",
+  "dependencies": {
+    "bootstrap-icons": "^1.4.0"
+  }
+}
