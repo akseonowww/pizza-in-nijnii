@@ -29,15 +29,46 @@ p
     // width: 600px
     margin: auto
 
+a
+    color: #FE5626
+    position: relative
+    text-decoration: none
+
+    &::before
+        content: ''
+        display: none
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 2px
+        background: linear-gradient(287.74deg, #F58656 8.52%, #FE5626 92.72%)
+        transition: .7s
+
+    &:hover
+        transition: .7s
+        text-decoration: none
+        color: #FE5626
+
+        &::before
+            display: block
+
+small
+    font-size: 12px
 // --------------------------  Default  ------------------
 
 .button
     border: none
     background: transparent
     opacity: .9
+    cursor: pointer
 
     &:hover
+        cursor: pointer
         opacity: 1
+
+    &:active
+        outline: none
 
     &__tel
         font-weight: 900
@@ -68,7 +99,7 @@ p
     &__fill
         height: 60px
         font-weight: 900
-        background: linear-gradient(180deg, #FE5626 0%, #F23F0E 100%), #59AAF1
+        background: linear-gradient(180deg, #FE5626 0%, #F23F0E 100%), 59AAF1
         box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26)
         border-radius: 59px
 
@@ -91,7 +122,15 @@ p
     &__img
         margin-right: 12px
 
-    
+.bg-img
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+    img
+        position: absolute
 
 // --------------------------  Header  ------------------
 .header
@@ -100,6 +139,10 @@ p
     font-size: 1rem
 
     &__nav
+
+        @media screen and ( max-width: 576px )
+            display: none
+
         ul
             height: 100%
             margin: 0
@@ -117,12 +160,16 @@ p
                     transition: all .5s
 
                     &:hover
-                        text-decoration: underline
+                        // text-decoration: underline
                         color: #F87848
 
     &__today-time
         position: relative
         margin-right: 2.5vw
+        font-size: 14px
+
+        @media screen and ( max-width: 576px )
+            display: none
 
         &::after
             content: ''
@@ -257,6 +304,16 @@ p
     padding: 140px 0
     position: relative
 
+    .bg-img
+        &__meat
+            top: 188px
+            left: 20px
+
+        &__horses
+            top: 400px
+            right: 0
+            opacity: .1
+
     .basket
         position: absolute
         top: 144px
@@ -350,10 +407,16 @@ p
                 color: #111111
                 box-shadow: 0 0 20px 5px #f1f9ff60
 
+                &::before
+                    display: none
+
     .product
+        position: relative
+        width: 100%
+
         &-card
             position: relative
-            margin-bottom: 22px
+            margin-bottom: 44px
 
             &__img
                 margin: auto
@@ -363,6 +426,33 @@ p
                 img
                     width: 90%
 
+            &::after
+                content: ''
+                display: block
+                position: absolute
+                height: 92px
+                width: 92px
+                background-color: #fff
+                bottom: -10px
+                left: 50%
+                margin-left: -46px
+                z-index: 4
+                border: 2px solid #dbdde6
+                border-radius: 15px
+                transform: rotate(45deg)
+
+            &::before
+                content: ''
+                display: block
+                position: absolute
+                bottom: 2px
+                left: 50%
+                margin-left: -75px
+                width: 150px
+                height: 100px
+                z-index: 5
+                background-color: #fff
+
         &-card__container
             cursor: pointer
             width: 100%
@@ -370,11 +460,11 @@ p
             border: 2px solid #dbdde6
             border-radius: 15px
             padding: 1px 22px 22px 22px
-            overflow: hidden
+            // overflow: hidden
             transition: all .3s cubic-bezier(0.455, 0.03, 0.515, 0.955)
 
             &:hover
-                transform: scale(1.02)
+                // transform: scale(1.02)
                 border: 2px solid ffc9b1
                 background-color: #fffcfb
 
@@ -396,11 +486,15 @@ p
                 font-size: 16px
 
         &__footer
+            position: relative
+            width: 100%
             // display: flex
             // justify-content: space-between
             margin-top: 18px
 
         &__price
+            position: relative
+            z-index: 8
             display: inline-block
             color: #121146
             font-weight: 400
@@ -412,17 +506,20 @@ p
                 font-size: 16px
 
     .button__add-product
+        position: absolute
+        bottom: -33px
+        left: 50%
+        margin-left: -16.5px
+        z-index: 8
         display: flex
-        justify-content: center
+        justify-content: center-33px
         align-items: center
 
         border-radius: 21px
-        border: 2px solid #ECEEF6
-        padding-right: 10px
-        height: 32px
-        width: 100%
+        border: 2px solid ECEEF6
+        height: 33px
+        width: 33px
         font-size: 13px
-        margin-top: 4px
 
         .button__icon_white
             height: 33px
@@ -432,62 +529,71 @@ p
                 height: 50%
 
 // --------------------------  Inst  ------------------
-.inst-beta
+.inst
     position: relative
     margin-bottom: 120px
     // height: 23em
     width: 120vw
     margin-left: -10vw
 
-    .inst
+    .bg-img
+        &__ucrop
+            top: -147px
+            left: 10vw
 
-        &__post
-            position: relative
-            height: 100%
-            width: 100%
-            margin: 0 1vw
+    &__post
+        position: relative
+        height: 100%
+        width: 100%
+        margin: 0 1vw
 
-            &::before
-                content: ''
-                display: block
-                position: absolute
-                z-index: 2
-                top: 0
-                left: 0
-                width: 100%
-                height: 100%
-                background-color: rgba(37, 77, 124, .4)
-
-            img
-                width: 100%
-                height: 100%
-
-        &__link
-            position: absolute
-            z-index: 4
-            top: 50%
-            left: 50%
-            margin-left: -240px
-            margin-top: -90px
-            height: 180px
-            width: 480px
-            background: linear-gradient(45.04deg, #FD9924 -51.05%, #F65B16 134.89%)
-            box-shadow: 0px 70px 90px rgba(253, 55, 36, 0.2), 0px 35px 50px rgba(253, 55, 36, 0.2), 0px 20px 25px rgba(253, 55, 36, 0.2)
-            border-radius: 15px
-            padding: 20px
-
-        &__text
+        &::before
+            content: ''
             display: block
-            color: #fff
-            text-decoration: none
+            position: absolute
+            z-index: 2
+            top: 0
+            left: 0
             width: 100%
             height: 100%
-            border: 2px solid rgba(180, 180, 180, .1)
-            border-radius: 15px
-            font-size: 24px
+            background-color: rgba(37, 77, 124, .4)
 
-        &:hover
-            color: #fff
+        img
+            width: 100%
+            height: 100%
+
+    &__link
+        position: absolute
+        z-index: 4
+        top: 50%
+        left: 50%
+        margin-left: -240px
+        margin-top: -90px
+        height: 180px
+        width: 480px
+        background: linear-gradient(45.04deg, #FD9924 -51.05%, #F65B16 134.89%)
+        box-shadow: 0px 70px 90px rgba(253, 55, 36, 0.2), 0px 35px 50px rgba(253, 55, 36, 0.2), 0px 20px 25px rgba(253, 55, 36, 0.2)
+        border-radius: 15px
+        padding: 20px
+
+    &__text
+        display: block
+        color: #fff
+        text-decoration: none
+        width: 100%
+        height: 100%
+        border: 2px solid rgba(180, 180, 180, .1)
+        border-radius: 15px
+        font-size: 24px
+
+    &:hover
+        color: #fff
+
+    a:hover
+        color: #fff
+
+        &::before
+            display: none
 
 // --------------------------  Phobe  ------------------
 .tel-phone
@@ -523,6 +629,17 @@ p
 // --------------------------  Footer  ------------------
 .footer
     padding: 70px
+
+    .link_akseonowwww
+        text-align: right
+
+    a
+        text-decoration: underline
+        color: #000
+        font-size: 14px
+
+        &:hover
+            color: #FE5626
 
 .header__logo
     img
