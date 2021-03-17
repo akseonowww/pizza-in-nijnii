@@ -20,1324 +20,250 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"
     />
     <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon" />
-    
+
     <link rel="stylesheet" href="./css/main.css" />
     <title>Вкус вечеринки — доставка еды до 15 минут по Нижнему</title>
-   
   </head>
   <body>
+
+	<!-- HEADER -->
     <header class="header">
-      <div class="container">
-        <div class="row">
-            <div
-              class="col-lg-12 d-flex align-items-center justify-content-between"
-            >
-              <nav class="col-lg-5 d-none d-lg-flex header__nav align-items-center">
-                <ul>
-                  <li><a href="#">Оплата</a></li>
-                  <li><a href="#">О нас</a></li>
-                  <li><a href="#">Контакты</a></li>
-                </ul>
-              </nav>
-              <!-- /.header__nav -->
-              <div
-                class="col-8 col-lg-2 logo d-flex justify-content-start justify-content-lg-center align-items-center"
-              >
-                <div class="logo__img">
-                  <img
-                    src="./img/logo-pizza.svg"
-                    alt="Логотип пицы"
-                    height="77px"
-                    weight="77px"
-                  />
-                </div>
-                <!-- /.logo__img -->
-                <div class="logo__title">
-                  <h1>
-                    <span class="color-orange">Вкус</span> <br />
-                    вечеринки
-                  </h1>
-                </div>
-                <!-- /.logo__title -->
-              </div>
-              <!-- /.header__logo -->
-              <div class="col-4 d-flex justify-content-end d-lg-none header__nav_mob">
-                <button class="button"><img src="./img/basket-black.svg" alt=""></button>
-                <button class="button button__menu"><img src="./img/menu.svg" alt=""></button>
-              </div>
-              <div
-                class="col-lg-5 header__tel d-none d-lg-flex flex-column justify-content-end align-items-end"
-              >
-                <button
-                  class="button button__tel d-inline-flex align-items-center"
-                >
-                  <div
-                    class="button__icon d-inline-flex justify-content-center align-items-center"
-                  >
-                    <img src="./img/phone-icon.svg" alt="Icon phone" />
-                  </div>
-                  <span>+7 800 333 08 98</span>
-                </button>
-                <!-- /.button tel -->
-                <span class="header__today-time">
-                  Работаем с 9:00 до 22:00
-                </span>
-                <!-- /.header__today-time -->
-              </div>
-              <!-- /.header__tel -->
-          </div>
+      <div class="header__container container">
+        <div class="container__logo">
+          <img src="./img/logo-pizza.svg" alt="Лого" />
         </div>
+        <!-- /.container__logo -->
+        <div class="container__buttons">
+          <button class="button button_icon">
+            <img src="" alt="Корзина" />
+			<span class="button__number">0</span>
+          </button>
+          <!-- /.button button_icon -->
+		  <button class="button button_icon">
+            <img src="" alt="Меню" />
+          </button>
+          <!-- /.button button_icon -->
+        </div>
+        <!-- /.container__buttons -->
       </div>
-      <!-- /.conteiner -->
+      <!-- /.header__container container -->
     </header>
     <!-- /.header -->
 
-    <section class="main">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2>Доставка еды в Нижнем Новгороде</h2>
-            <p class="text-center">
-              Если вы решили расслабиться или у вас появились неожиданные гости,
-              звоните нам. Мы позаботимся о том, чтобы ваш отдых был комфортным,
-              приятным и вкусным.
-            </p>
-          </div>
-        </div>
-        <!-- /.row -->
+	<!-- MAIN -->
+	<main class="main">
+		<div class="main__container container">
+			<div class="container__text">
+				<h2>Доставим еду за 15 минут</h2>
+				<p class="subtitle">Если вы решили расслабиться или у вас появились неожиданные гости, звоните нам. Мы позаботимся о том, чтобы ваш отдых был комфортным, приятным и вкусным.</p>
+				<!-- /.subtitle -->
+			</div>
+			<!-- /.container__text -->
+			<div class="container__features features">
+				<img src="./" alt="Плюс" class="features__img">
+				<div class="features__text">
+					<button class="button">+</button>
+					<!-- /.button -->
+					<img src="./" alt="Пица">
+					<strong class="text">При заказе от <strong class="features__strong">800 руб</strong> доставка бесплатная</strong>
+					<!-- /.text -->
+				</div>
+				<!-- /.features__text -->
+			</div>
+			<!-- /.container__features features -->
+			<div class="main__background"><img src="" alt="" class="main__background-1"><img src="" alt="" class="main__background-2"><img src="" alt="" class="main__background-3"><img src="" alt="" class="main__background-4"></div>
+			<!-- /.main__background -->
+		</div>
+		<!-- /.main__container container -->
+	</main>
+	<!-- /.main -->
 
-        <div class="row">
-          <div class="col-lg-12 main__img text-center">
-            <img class="img__potate" src="./img/potate.png" alt="Обои" />
-            <img
-              class="img__potate-line"
-              src="./img/potate_line.svg"
-              alt="Обои"
-            />
-            <img class="img__oyster-line" src="./img/oyster.svg" alt="Обои" />
-            <img class="img__cucumbers" src="./img/cucumbers.png" alt="Обои" />
-            <img class="img__garlic" src="./img/garlic.png" alt="Обои" />
-            <img
-              class="img__garlic-line"
-              src="./img/garlic_line.svg"
-              alt="Обои"
-            />
-            <img
-              class="img__pizza-line"
-              src="./img/pizza_line.svg"
-              alt="Обои"
-            />
-            <img class="img__seed" src="./img/seed.png" alt="Обои" />
-          </div>
-        </div>
-        <div class="row main__product">
-          <img class="product__img" src="./img/pizza.png" alt="Кусок питцы" />
-          <div class="product__info">
-            <button
-              class="button button__pluse d-flex justify-content-center align-items-center"
-            >
-              +
-            </button>
-            <!-- /.button_pluse -->
-            <img src="./img/line.svg" alt="Линия" />
-            <p class="info__text text-right">
-              При заказе от 800
-              <span class="color-orange">руб</span>
-              доставка бесплатная
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- /.container -->
-    </section>
-    <!-- /.main -->
+	<!-- POPULAR DISHES -->
+	<section class="popular-product">
+		<div class="popular-product__container container">
+			<div class="container__text">
+				<h2>Популярные блюда</h2>
+			</div>
+			<div class="container__tab-nav">
+				<button class="button button__fill"></button>
+				<button class="button button__fill"></button>
+				<button class="button button__fill"></button>
+				<button class="button button__fill"></button>
+				<button class="button button__fill"></button>
+			</div>
+			<div class="container__tabs tabs products">
+				<div class="tabs__item products__item">
+					<img src="https://dodopizza-a.akamaihd.net/static/Img/Products/5dffe4c7d3bc49668f50c1d08d920992_292x292.jpeg" alt="Фото прКартинка продуктаодукта" class="product__img">
+					<div class="products__text">
+						<div class="title">
+							<h5>Пепперони фреш</h5>
+							<small class="procut__size">32 см</small>
+							<!-- /.procut__size -->
+						</div>
+						<!-- /.title -->
+						<div class="product__descr">Пикантная пепперони, увеличенная порция моцареллы, томаты, томатный соус</div>
+						<!-- /.product__descr -->
+						<div class="product__footer">
+							<span class="product__price">249 ₽</span>
+							<!-- /.product__price -->
+							<button class="button button_icon"><img src="" alt="Иконка корзины"></button>
+							<!-- /.button button_icon -->
+						</div>
+					</div>
+					<!-- /.products__text -->
+				</div>
+				<!-- /.tabs__item products__item -->
+				<div class="tabs__item products__item">
+					<img src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/fc4d663d-fb00-48ea-8391-7a4648553f25.jpg" alt="Картинка продукта" class="product__img">
+					<div class="products__text">
+						<div class="title">
+							<h5>Сырный цыпленок</h5>
+							<small class="procut__size">32 см</small>
+							<!-- /.procut__size -->
+						</div>
+						<!-- /.title -->
+						<div class="product__descr">Цыпленок, моцарелла, сырный соус, томаты</div>
+						<!-- /.product__descr -->
+						<div class="product__footer">
+							<span class="product__price">249 ₽</span>
+							<!-- /.product__price -->
+							<button class="button button_icon"><img src="" alt="Иконка корзины"></button>
+							<!-- /.button button_icon -->
+						</div>
+					</div>
+					<!-- /.products__text -->
+				</div>
+				<!-- /.tabs__item products__item -->
+				<div class="tabs__item products__item">
+					<img src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/d640c5fb-0944-4123-9363-c5706c725546.jpg" alt="Картинка продукта" class="product__img">
+					<div class="products__text">
+						<div class="title">
+							<h5>Гавайская</h5>
+							<small class="procut__size">64 см</small>
+							<!-- /.procut__size -->
+						</div>
+						<!-- /.title -->
+						<div class="product__descr">Цыпленок, ананасы, моцарелла, томатный соус</div>
+						<!-- /.product__descr -->
+						<div class="product__footer">
+							<span class="product__price">249 ₽</span>
+							<!-- /.product__price -->
+							<button class="button button_icon"><img src="" alt="Иконка корзины"></button>
+							<!-- /.button button_icon -->
+						</div>
+					</div>
+					<!-- /.products__text -->
+				</div>
+				<!-- /.tabs__item products__item -->
+				<div class="tabs__item products__item">
+					<img src="" alt="Картинка продукта" class="product__img">
+					<div class="products__text">
+						<div class="title">
+							<h5></h5>
+							<small class="procut__size"></small>
+							<!-- /.procut__size -->
+						</div>
+						<!-- /.title -->
+						<div class="product__descr"></div>
+						<!-- /.product__descr -->
+						<div class="product__footer">
+							<span class="product__price">249 ₽</span>
+							<!-- /.product__price -->
+							<button class="button button_icon"><img src="" alt="Иконка корзины"></button>
+							<!-- /.button button_icon -->
+						</div>
+					</div>
+					<!-- /.products__text -->
+				</div>
+				<!-- /.tabs__item products__item -->
+				<div class="tabs__item products__item">
+					<img src="" alt="Картинка продукта" class="product__img">
+					<div class="products__text">
+						<div class="title">
+							<h5></h5>
+							<small class="procut__size"></small>
+							<!-- /.procut__size -->
+						</div>
+						<!-- /.title -->
+						<div class="product__descr"></div>
+						<!-- /.product__descr -->
+						<div class="product__footer">
+							<span class="product__price">249 ₽</span>
+							<!-- /.product__price -->
+							<button class="button button_icon"><img src="" alt="Иконка корзины"></button>
+							<!-- /.button button_icon -->
+						</div>
+					</div>
+					<!-- /.products__text -->
+				</div>
+				<!-- /.tabs__item products__item -->
+				<div class="tabs__item products__item">
+					<img src="" alt="Картинка продукта" class="product__img">
+					<div class="products__text">
+						<div class="title">
+							<h5></h5>
+							<small class="procut__size"></small>
+							<!-- /.procut__size -->
+						</div>
+						<!-- /.title -->
+						<div class="product__descr"></div>
+						<!-- /.product__descr -->
+						<div class="product__footer">
+							<span class="product__price">249 ₽</span>
+							<!-- /.product__price -->
+							<button class="button button_icon"><img src="" alt="Иконка корзины"></button>
+							<!-- /.button button_icon -->
+						</div>
+					</div>
+					<!-- /.products__text -->
+				</div>
+				<!-- /.tabs__item products__item -->
+				<div class="tabs__item products__item">
+					<img src="" alt="Картинка продукта" class="product__img">
+					<div class="products__text">
+						<div class="title">
+							<h5></h5>
+							<small class="procut__size"></small>
+							<!-- /.procut__size -->
+						</div>
+						<!-- /.title -->
+						<div class="product__descr"></div>
+						<!-- /.product__descr -->
+						<div class="product__footer">
+							<span class="product__price">249 ₽</span>
+							<!-- /.product__price -->
+							<button class="button button_icon"><img src="" alt="Иконка корзины"></button>
+							<!-- /.button button_icon -->
+						</div>
+					</div>
+					<!-- /.products__text -->
+				</div>
+				<!-- /.tabs__item products__item -->
+				<div class="tabs__item products__item">
+					<img src="" alt="Картинка продукта" class="product__img">
+					<div class="products__text">
+						<div class="title">
+							<h5></h5>
+							<small class="procut__size"></small>
+							<!-- /.procut__size -->
+						</div>
+						<!-- /.title -->
+						<div class="product__descr"></div>
+						<!-- /.product__descr -->
+						<div class="product__footer">
+							<span class="product__price">249 ₽</span>
+							<!-- /.product__price -->
+							<button class="button button_icon"><img src="" alt="Иконка корзины"></button>
+							<!-- /.button button_icon -->
+						</div>
+					</div>
+					<!-- /.products__text -->
+				</div>
+				<!-- /.tabs__item products__item -->
+			</div>
+			<!-- /.container__tabs tabs products -->
+		</div>
+	</section>
 
-    <div class="modal-shop">
-      <div class="modal-shop__container">
-        <div class="modal-shop__header">
-          <h3>Корзина</h3>
-          <button class="button button__close" onclick="closeModuleShop()">
-            <i class="bi bi-x"></i>
-          </button>
-        </div>
-        <div class="modal-shop__content" id="cart_content"></div>
-        <div class="modal-shop__footer">
-          <p class="modal-shop__button">
-            <button class="button button__fill" id="clear_cart">Очистить корзину</button></p>
-        </div>
-      <!-- /.cart_content -->
-      </div>
-    </div>
-    <!-- /.catalog-top__modal -->
-
-    <section class="catalog-top">
-      <div class="basket" id="basket">
-        <button class="button basket__button" onclick="openModuleShop()">
-          <img src="./img/basket.svg" alt="Корзина" />
-          <span
-            class="basket__number justify-content-center align-items-center"
-            ></span
-          >
-          <!-- /.number -->
-        </button>
-        <!-- /.button -->
-        <div
-          class="basket__price d-flex justify-content-center align-items-center"
-        >
-          <span class="price">
-            = <span class="price__item">0</span> руб.
-          </span>
-          <div class="triangle"></div>
-        </div>
-        <!-- /.bucket__price -->
-      </div>
-      <!-- /.basket -->
-      <div class="bg-img">
-        <img src="./img/meat.svg" alt="Иконка мяса" class="bg-img__meat" />
-        <img src="./img/horses.svg" alt="Иконка ложек" class="bg-img__horses" />
-      </div>
-      <div class="container">
-        <div class="row text-center">
-          <h2>Популярные блюда</h2>
-        </div>
-        <!-- /.row -->
-        <div class="row text-center">
-          <ul class="text-center col-lg-12 nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                id="pizza-tab"
-                data-toggle="tab"
-                href="#pizza"
-                role="tab"
-                aria-controls="pizza"
-                aria-selected="true"
-                >Пица</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                id="sushi-tab"
-                data-toggle="tab"
-                href="#sushi"
-                role="tab"
-                aria-controls="sushi"
-                aria-selected="false"
-                >Суши</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                id="salad-tab"
-                data-toggle="tab"
-                href="#salad"
-                role="tab"
-                aria-controls="salad"
-                aria-selected="false"
-                >Салат</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                id="salad-tab"
-                data-toggle="tab"
-                href="#salad"
-                role="tab"
-                aria-controls="salad"
-                aria-selected="false"
-                >Десерт</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                id="salad-tab"
-                data-toggle="tab"
-                href="#salad"
-                role="tab"
-                aria-controls="salad"
-                aria-selected="false"
-                >Напитки</a
-              >
-            </li>
-          </ul>
-          <div class="col-lg-12 tab-content" id="myTabContent">
-            <div
-              class="tab-pane fade show active"
-              id="pizza"
-              role="tabpanel"
-              aria-labelledby="pizza-tab"
-            >
-              <div class="row">
-                <div class="col-lg-3 product-card">
-                  <div class="product-card__container text-center">
-                    <div class="product-card__img">
-                      <img src="./img/pizza-photo.png" alt="Фото пицы" />
-                    </div>
-                    <!-- /.product-card__img -->
-                    <div class="product__text">
-                      <div class="product__name d-flex justify-content-between">
-                        <strong class="product__title"
-                          >Пица "Четыре сыра"</strong
-                        >
-                        <!-- /.product__title -->
-                        <span class="product__size">32 см</span>
-                        <!-- /.product__size -->
-                      </div>
-                      <p class="product__info">
-                        Тесто, Моцарелла, Чеддер, Синий, Пармезан
-                      </p>
-                      <!-- /.product__info -->
-                    </div>
-                    <!-- /.product__text -->
-                    <div class="product__footer">
-                      <div class="product__price">129</div>
-                      <!-- /.product__price -->
-                      
-                    </div>
-                    <button
-                        data-id="carbonara"
-                        class="button button__add-product d-flex justify-content-center align-items-center"
-                      >
-                        <div
-                          class="button__icon_white d-flex justify-content-center align-items-center"
-                        >
-                          <img src="./img/basket-fill.svg" alt="" srcset="" />
-                        </div>
-                      </button>
-                      <!-- /.button__add-product -->
-                  </div>
-                  <!-- /.col-lg-3 probuct-card -->
-                </div>
-                <div class="col-lg-3 product-card">
-                  <div class="product-card__container text-center">
-                    <div class="product-card__img">
-                      <img src="./img/pizza-photo.png" alt="Фото пицы" />
-                    </div>
-                    <!-- /.product-card__img -->
-                    <div class="product__text">
-                      <div class="product__name d-flex justify-content-between">
-                        <strong class="product__title"
-                          >Пица "Четыре сыра"</strong
-                        >
-                        <!-- /.product__title -->
-                        <span class="product__size">32 см</span>
-                        <!-- /.product__size -->
-                      </div>
-                      <p class="product__info">
-                        Тесто, Моцарелла, Чеддер, Синий, Пармезан
-                      </p>
-                      <!-- /.product__info -->
-                    </div>
-                    <!-- /.product__text -->
-                    <div class="product__footer">
-                      <div class="product__price">129</div>
-                      <!-- /.product__price -->
-                      
-                    </div>
-                    <button
-                        data-id="philadelphiaSalmon"
-                        class="button button__add-product d-flex justify-content-center align-items-center"
-                      >
-                        <div
-                          class="button__icon_white d-flex justify-content-center align-items-center"
-                        >
-                          <img src="./img/basket-fill.svg" alt="" srcset="" />
-                        </div>
-                      </button>
-                      <!-- /.button__add-product -->
-                  </div>
-                  <!-- /.col-lg-3 probuct-card -->
-                </div>
-                <div class="col-lg-3 product-card">
-                  <div class="product-card__container text-center">
-                    <div class="product-card__img">
-                      <img src="./img/pizza-photo.png" alt="Фото пицы" />
-                    </div>
-                    <!-- /.product-card__img -->
-                    <div class="product__text">
-                      <div class="product__name d-flex justify-content-between">
-                        <strong class="product__title"
-                          >Пица "Четыре сыра"</strong
-                        >
-                        <!-- /.product__title -->
-                        <span class="product__size">32 см</span>
-                        <!-- /.product__size -->
-                      </div>
-                      <p class="product__info">
-                        Тесто, Моцарелла, Чеддер, Синий, Пармезан
-                      </p>
-                      <!-- /.product__info -->
-                    </div>
-                    <!-- /.product__text -->
-                    <div class="product__footer">
-                      <div class="product__price">129</div>
-                      <!-- /.product__price -->
-                      
-                    </div>
-                    <button
-                        data-id="diMare"
-                        class="button button__add-product d-flex justify-content-center align-items-center"
-                      >
-                        <div
-                          class="button__icon_white d-flex justify-content-center align-items-center"
-                        >
-                          <img src="./img/basket-fill.svg" alt="" srcset="" />
-                        </div>
-                      </button>
-                      <!-- /.button__add-product -->
-                  </div>
-                  <!-- /.col-lg-3 probuct-card -->
-                </div>
-                <div class="col-lg-3 product-card">
-                  <div class="product-card__container text-center">
-                    <div class="product-card__img">
-                      <img src="./img/pizza-photo.png" alt="Фото пицы" />
-                    </div>
-                    <!-- /.product-card__img -->
-                    <div class="product__text">
-                      <div class="product__name d-flex justify-content-between">
-                        <strong class="product__title"
-                          >Пица "Четыре сыра"</strong
-                        >
-                        <!-- /.product__title -->
-                        <span class="product__size">32 см</span>
-                        <!-- /.product__size -->
-                      </div>
-                      <p class="product__info">
-                        Тесто, Моцарелла, Чеддер, Синий, Пармезан
-                      </p>
-                      <!-- /.product__info -->
-                    </div>
-                    <!-- /.product__text -->
-                    <div class="product__footer">
-                      <div class="product__price">129</div>
-                      <!-- /.product__price -->
-                      
-                    </div>
-                    <button
-                        data-id="cuatroFormagio"
-                        class="button button__add-product d-flex justify-content-center align-items-center"
-                      >
-                        <div
-                          class="button__icon_white d-flex justify-content-center align-items-center"
-                        >
-                          <img src="./img/basket-fill.svg" alt="" srcset="" />
-                        </div>
-                      </button>
-                      <!-- /.button__add-product -->
-                  </div>
-                  <!-- /.col-lg-3 probuct-card -->
-                </div>
-                <div class="col-lg-3 product-card">
-                  <div class="product-card__container text-center">
-                    <div class="product-card__img">
-                      <img src="./img/pizza-photo.png" alt="Фото пицы" />
-                    </div>
-                    <!-- /.product-card__img -->
-                    <div class="product__text">
-                      <div class="product__name d-flex justify-content-between">
-                        <strong class="product__title"
-                          >Пица "Четыре сыра"</strong
-                        >
-                        <!-- /.product__title -->
-                        <span class="product__size">32 см</span>
-                        <!-- /.product__size -->
-                      </div>
-                      <p class="product__info">
-                        Тесто, Моцарелла, Чеддер, Синий, Пармезан
-                      </p>
-                      <!-- /.product__info -->
-                    </div>
-                    <!-- /.product__text -->
-                    <div class="product__footer">
-                      <div class="product__price">129</div>
-                      <!-- /.product__price -->
-                      
-                    </div>
-                    <button
-                        data-id="cuatroFormagio2"
-                        class="button button__add-product d-flex justify-content-center align-items-center"
-                      >
-                        <div
-                          class="button__icon_white d-flex justify-content-center align-items-center"
-                        >
-                          <img src="./img/basket-fill.svg" alt="" srcset="" />
-                        </div>
-                      </button>
-                      <!-- /.button__add-product -->
-                  </div>
-                  <!-- /.col-lg-3 probuct-card -->
-                </div>
-                <div class="col-lg-3 product-card">
-                  <div class="product-card__container text-center">
-                    <div class="product-card__img">
-                      <img src="./img/pizza-photo.png" alt="Фото пицы" />
-                    </div>
-                    <!-- /.product-card__img -->
-                    <div class="product__text">
-                      <div class="product__name d-flex justify-content-between">
-                        <strong class="product__title"
-                          >Пица "Четыре сыра"</strong
-                        >
-                        <!-- /.product__title -->
-                        <span class="product__size">32 см</span>
-                        <!-- /.product__size -->
-                      </div>
-                      <p class="product__info">
-                        Тесто, Моцарелла, Чеддер, Синий, Пармезан
-                      </p>
-                      <!-- /.product__info -->
-                    </div>
-                    <!-- /.product__text -->
-                    <div class="product__footer">
-                      <div class="product__price">129</div>
-                      <!-- /.product__price -->
-                      
-                    </div>
-                    <button
-                        data-id="cuatroFormagio3"
-                        class="button button__add-product d-flex justify-content-center align-items-center"
-                      >
-                        <div
-                          class="button__icon_white d-flex justify-content-center align-items-center"
-                        >
-                          <img src="./img/basket-fill.svg" alt="" srcset="" />
-                        </div>
-                      </button>
-                      <!-- /.button__add-product -->
-                  </div>
-                  <!-- /.col-lg-3 probuct-card -->
-                </div>
-                <div class="col-lg-3 product-card">
-                  <div class="product-card__container text-center">
-                    <div class="product-card__img">
-                      <img src="./img/pizza-photo.png" alt="Фото пицы" />
-                    </div>
-                    <!-- /.product-card__img -->
-                    <div class="product__text">
-                      <div class="product__name d-flex justify-content-between">
-                        <strong class="product__title"
-                          >Пица "Четыре сыра"</strong
-                        >
-                        <!-- /.product__title -->
-                        <span class="product__size">32 см</span>
-                        <!-- /.product__size -->
-                      </div>
-                      <p class="product__info">
-                        Тесто, Моцарелла, Чеддер, Синий, Пармезан
-                      </p>
-                      <!-- /.product__info -->
-                    </div>
-                    <!-- /.product__text -->
-                    <div class="product__footer">
-                      <div class="product__price">129</div>
-                      <!-- /.product__price -->
-                      
-                    </div>
-                    <button
-                        data-id="1"
-                        class="button button__add-product d-flex justify-content-center align-items-center"
-                      >
-                        <div
-                          class="button__icon_white d-flex justify-content-center align-items-center"
-                        >
-                          <img src="./img/basket-fill.svg" alt="" srcset="" />
-                        </div>
-                      </button>
-                      <!-- /.button__add-product -->
-                  </div>
-                  <!-- /.col-lg-3 probuct-card -->
-                </div>
-              </div>
-              <!-- /.row -->
-            </div>
-            <div
-              class="tab-pane fade show active"
-              id="sushi"
-              role="tabpanel"
-              aria-labelledby="pizza-tab"
-            >
-              <div class="row">
-                <div class="col-lg-3 product-card">
-                  <div class="product-card__container text-center">
-                    <div class="product-card__img">
-                      <img src="./img/pizza-photo.png" alt="Фото пицы" />
-                    </div>
-                    <!-- /.product-card__img -->
-                    <div class="product__text">
-                      <div class="product__name d-flex justify-content-between">
-                        <strong class="product__title"
-                          >Пица "Четыре сыра"</strong
-                        >
-                        <!-- /.product__title -->
-                        <span class="product__size">32 см</span>
-                        <!-- /.product__size -->
-                      </div>
-                      <p class="product__info">
-                        Тесто, Моцарелла, Чеддер, Синий, Пармезан
-                      </p>
-                      <!-- /.product__info -->
-                    </div>
-                    <!-- /.product__text -->
-                    <div class="product__footer">
-                      <div class="product__price">129</div>
-                      <!-- /.product__price -->
-                      
-                    </div>
-                    <button
-                        data-id="1"
-                        class="button button__add-product d-flex justify-content-center align-items-center"
-                      >
-                        <div
-                          class="button__icon_white d-flex justify-content-center align-items-center"
-                        >
-                          <img src="./img/basket-fill.svg" alt="" srcset="" />
-                        </div>
-                      </button>
-                      <!-- /.button__add-product -->
-                  </div>
-                  <!-- /.col-lg-3 probuct-card -->
-                </div>
-                <div class="col-lg-3 product-card">
-                  <div class="product-card__container text-center">
-                    <div class="product-card__img">
-                      <img src="./img/pizza-photo.png" alt="Фото пицы" />
-                    </div>
-                    <!-- /.product-card__img -->
-                    <div class="product__text">
-                      <div class="product__name d-flex justify-content-between">
-                        <strong class="product__title"
-                          >Пица "Четыре сыра"</strong
-                        >
-                        <!-- /.product__title -->
-                        <span class="product__size">32 см</span>
-                        <!-- /.product__size -->
-                      </div>
-                      <p class="product__info">
-                        Тесто, Моцарелла, Чеддер, Синий, Пармезан
-                      </p>
-                      <!-- /.product__info -->
-                    </div>
-                    <!-- /.product__text -->
-                    <div class="product__footer">
-                      <div class="product__price">129</div>
-                      <!-- /.product__price -->
-                      
-                    </div>
-                    <button
-                        data-id="1"
-                        class="button button__add-product d-flex justify-content-center align-items-center"
-                      >
-                        <div
-                          class="button__icon_white d-flex justify-content-center align-items-center"
-                        >
-                          <img src="./img/basket-fill.svg" alt="" srcset="" />
-                        </div>
-                      </button>
-                      <!-- /.button__add-product -->
-                  </div>
-                  <!-- /.col-lg-3 probuct-card -->
-                </div>
-                <div class="col-lg-3 product-card">
-                  <div class="product-card__container text-center">
-                    <div class="product-card__img">
-                      <img src="./img/pizza-photo.png" alt="Фото пицы" />
-                    </div>
-                    <!-- /.product-card__img -->
-                    <div class="product__text">
-                      <div class="product__name d-flex justify-content-between">
-                        <strong class="product__title"
-                          >Пица "Четыре сыра"</strong
-                        >
-                        <!-- /.product__title -->
-                        <span class="product__size">32 см</span>
-                        <!-- /.product__size -->
-                      </div>
-                      <p class="product__info">
-                        Тесто, Моцарелла, Чеддер, Синий, Пармезан
-                      </p>
-                      <!-- /.product__info -->
-                    </div>
-                    <!-- /.product__text -->
-                    <div class="product__footer">
-                      <div class="product__price">129</div>
-                      <!-- /.product__price -->
-                      
-                    </div>
-                    <button
-                        data-id="1"
-                        class="button button__add-product d-flex justify-content-center align-items-center"
-                      >
-                        <div
-                          class="button__icon_white d-flex justify-content-center align-items-center"
-                        >
-                          <img src="./img/basket-fill.svg" alt="" srcset="" />
-                        </div>
-                      </button>
-                      <!-- /.button__add-product -->
-                  </div>
-                  <!-- /.col-lg-3 probuct-card -->
-                </div>
-                <div class="col-lg-3 product-card">
-                  <div class="product-card__container text-center">
-                    <div class="product-card__img">
-                      <img src="./img/pizza-photo.png" alt="Фото пицы" />
-                    </div>
-                    <!-- /.product-card__img -->
-                    <div class="product__text">
-                      <div class="product__name d-flex justify-content-between">
-                        <strong class="product__title"
-                          >Пица "Четыре сыра"</strong
-                        >
-                        <!-- /.product__title -->
-                        <span class="product__size">32 см</span>
-                        <!-- /.product__size -->
-                      </div>
-                      <p class="product__info">
-                        Тесто, Моцарелла, Чеддер, Синий, Пармезан
-                      </p>
-                      <!-- /.product__info -->
-                    </div>
-                    <!-- /.product__text -->
-                    <div class="product__footer">
-                      <div class="product__price">129</div>
-                      <!-- /.product__price -->
-                      
-                    </div>
-                    <button
-                        data-id="1"
-                        class="button button__add-product d-flex justify-content-center align-items-center"
-                      >
-                        <div
-                          class="button__icon_white d-flex justify-content-center align-items-center"
-                        >
-                          <img src="./img/basket-fill.svg" alt="" srcset="" />
-                        </div>
-                      </button>
-                      <!-- /.button__add-product -->
-                  </div>
-                  <!-- /.col-lg-3 probuct-card -->
-                </div>
-                <div class="col-lg-3 product-card">
-                  <div class="product-card__container text-center">
-                    <div class="product-card__img">
-                      <img src="./img/pizza-photo.png" alt="Фото пицы" />
-                    </div>
-                    <!-- /.product-card__img -->
-                    <div class="product__text">
-                      <div class="product__name d-flex justify-content-between">
-                        <strong class="product__title"
-                          >Пица "Четыре сыра"</strong
-                        >
-                        <!-- /.product__title -->
-                        <span class="product__size">32 см</span>
-                        <!-- /.product__size -->
-                      </div>
-                      <p class="product__info">
-                        Тесто, Моцарелла, Чеддер, Синий, Пармезан
-                      </p>
-                      <!-- /.product__info -->
-                    </div>
-                    <!-- /.product__text -->
-                    <div class="product__footer">
-                      <div class="product__price">129</div>
-                      <!-- /.product__price -->
-                      
-                    </div>
-                    <button
-                        data-id="1"
-                        class="button button__add-product d-flex justify-content-center align-items-center"
-                      >
-                        <div
-                          class="button__icon_white d-flex justify-content-center align-items-center"
-                        >
-                          <img src="./img/basket-fill.svg" alt="" srcset="" />
-                        </div>
-                      </button>
-                      <!-- /.button__add-product -->
-                  </div>
-                  <!-- /.col-lg-3 probuct-card -->
-                </div>
-                <div class="col-lg-3 product-card">
-                  <div class="product-card__container text-center">
-                    <div class="product-card__img">
-                      <img src="./img/pizza-photo.png" alt="Фото пицы" />
-                    </div>
-                    <!-- /.product-card__img -->
-                    <div class="product__text">
-                      <div class="product__name d-flex justify-content-between">
-                        <strong class="product__title"
-                          >Пица "Четыре сыра"</strong
-                        >
-                        <!-- /.product__title -->
-                        <span class="product__size">32 см</span>
-                        <!-- /.product__size -->
-                      </div>
-                      <p class="product__info">
-                        Тесто, Моцарелла, Чеддер, Синий, Пармезан
-                      </p>
-                      <!-- /.product__info -->
-                    </div>
-                    <!-- /.product__text -->
-                    <div class="product__footer">
-                      <div class="product__price">129</div>
-                      <!-- /.product__price -->
-                      
-                    </div>
-                    <button
-                        data-id="1"
-                        class="button button__add-product d-flex justify-content-center align-items-center"
-                      >
-                        <div
-                          class="button__icon_white d-flex justify-content-center align-items-center"
-                        >
-                          <img src="./img/basket-fill.svg" alt="" srcset="" />
-                        </div>
-                      </button>
-                      <!-- /.button__add-product -->
-                  </div>
-                  <!-- /.col-lg-3 probuct-card -->
-                </div>
-                <div class="col-lg-3 product-card">
-                  <div class="product-card__container text-center">
-                    <div class="product-card__img">
-                      <img src="./img/pizza-photo.png" alt="Фото пицы" />
-                    </div>
-                    <!-- /.product-card__img -->
-                    <div class="product__text">
-                      <div class="product__name d-flex justify-content-between">
-                        <strong class="product__title"
-                          >Пица "Четыре сыра"</strong
-                        >
-                        <!-- /.product__title -->
-                        <span class="product__size">32 см</span>
-                        <!-- /.product__size -->
-                      </div>
-                      <p class="product__info">
-                        Тесто, Моцарелла, Чеддер, Синий, Пармезан
-                      </p>
-                      <!-- /.product__info -->
-                    </div>
-                    <!-- /.product__text -->
-                    <div class="product__footer">
-                      <div class="product__price">129</div>
-                      <!-- /.product__price -->
-                      
-                    </div>
-                    <button
-                        data-id="1"
-                        class="button button__add-product d-flex justify-content-center align-items-center"
-                      >
-                        <div
-                          class="button__icon_white d-flex justify-content-center align-items-center"
-                        >
-                          <img src="./img/basket-fill.svg" alt="" srcset="" />
-                        </div>
-                      </button>
-                      <!-- /.button__add-product -->
-                  </div>
-                  <!-- /.col-lg-3 probuct-card -->
-                </div>
-                <div class="col-lg-3 product-card">
-                  <div class="product-card__container text-center">
-                    <div class="product-card__img">
-                      <img src="./img/pizza-photo.png" alt="Фото пицы" />
-                    </div>
-                    <!-- /.product-card__img -->
-                    <div class="product__text">
-                      <div class="product__name d-flex justify-content-between">
-                        <strong class="product__title"
-                          >Пица "Четыре сыра"</strong
-                        >
-                        <!-- /.product__title -->
-                        <span class="product__size">32 см</span>
-                        <!-- /.product__size -->
-                      </div>
-                      <p class="product__info">
-                        Тесто, Моцарелла, Чеддер, Синий, Пармезан
-                      </p>
-                      <!-- /.product__info -->
-                    </div>
-                    <!-- /.product__text -->
-                    <div class="product__footer">
-                      <div class="product__price">129</div>
-                      <!-- /.product__price -->
-                      
-                    </div>
-                    <button
-                        data-id="1"
-                        class="button button__add-product d-flex justify-content-center align-items-center"
-                      >
-                        <div
-                          class="button__icon_white d-flex justify-content-center align-items-center"
-                        >
-                          <img src="./img/basket-fill.svg" alt="" srcset="" />
-                        </div>
-                      </button>
-                      <!-- /.button__add-product -->
-                  </div>
-                  <!-- /.col-lg-3 probuct-card -->
-                </div>
-              </div>
-              <!-- /.row -->
-            </div>
-            <div
-              class="tab-pane fade show active"
-              id="salad"
-              role="tabpanel"
-              aria-labelledby="salad-tab"
-            >
-              <div class="row">
-                <div class="col-lg-3 product-card">
-                  <div class="product-card__container text-center">
-                    <div class="product-card__img">
-                      <img src="./img/pizza-photo.png" alt="Фото пицы" />
-                    </div>
-                    <!-- /.product-card__img -->
-                    <div class="product__text">
-                      <div class="product__name d-flex justify-content-between">
-                        <strong class="product__title"
-                          >Пица "Четыре сыра"</strong
-                        >
-                        <!-- /.product__title -->
-                        <span class="product__size">32 см</span>
-                        <!-- /.product__size -->
-                      </div>
-                      <p class="product__info">
-                        Тесто, Моцарелла, Чеддер, Синий, Пармезан
-                      </p>
-                      <!-- /.product__info -->
-                    </div>
-                    <!-- /.product__text -->
-                    <div class="product__footer">
-                      <div class="product__price">129</div>
-                      <!-- /.product__price -->
-                      
-                    </div>
-                    <button
-                        data-id="1"
-                        class="button button__add-product d-flex justify-content-center align-items-center"
-                      >
-                        <div
-                          class="button__icon_white d-flex justify-content-center align-items-center"
-                        >
-                          <img src="./img/basket-fill.svg" alt="" srcset="" />
-                        </div>
-                      </button>
-                      <!-- /.button__add-product -->
-                  </div>
-                  <!-- /.col-lg-3 probuct-card -->
-                </div>
-                <div class="col-lg-3 product-card">
-                  <div class="product-card__container text-center">
-                    <div class="product-card__img">
-                      <img src="./img/pizza-photo.png" alt="Фото пицы" />
-                    </div>
-                    <!-- /.product-card__img -->
-                    <div class="product__text">
-                      <div class="product__name d-flex justify-content-between">
-                        <strong class="product__title"
-                          >Пица "Четыре сыра"</strong
-                        >
-                        <!-- /.product__title -->
-                        <span class="product__size">32 см</span>
-                        <!-- /.product__size -->
-                      </div>
-                      <p class="product__info">
-                        Тесто, Моцарелла, Чеддер, Синий, Пармезан
-                      </p>
-                      <!-- /.product__info -->
-                    </div>
-                    <!-- /.product__text -->
-                    <div class="product__footer">
-                      <div class="product__price">129</div>
-                      <!-- /.product__price -->
-                      
-                    </div>
-                    <button
-                        data-id="1"
-                        class="button button__add-product d-flex justify-content-center align-items-center"
-                      >
-                        <div
-                          class="button__icon_white d-flex justify-content-center align-items-center"
-                        >
-                          <img src="./img/basket-fill.svg" alt="" srcset="" />
-                        </div>
-                      </button>
-                      <!-- /.button__add-product -->
-                  </div>
-                  <!-- /.col-lg-3 probuct-card -->
-                </div>
-                <div class="col-lg-3 product-card">
-                  <div class="product-card__container text-center">
-                    <div class="product-card__img">
-                      <img src="./img/pizza-photo.png" alt="Фото пицы" />
-                    </div>
-                    <!-- /.product-card__img -->
-                    <div class="product__text">
-                      <div class="product__name d-flex justify-content-between">
-                        <strong class="product__title"
-                          >Пица "Четыре сыра"</strong
-                        >
-                        <!-- /.product__title -->
-                        <span class="product__size">32 см</span>
-                        <!-- /.product__size -->
-                      </div>
-                      <p class="product__info">
-                        Тесто, Моцарелла, Чеддер, Синий, Пармезан
-                      </p>
-                      <!-- /.product__info -->
-                    </div>
-                    <!-- /.product__text -->
-                    <div class="product__footer">
-                      <div class="product__price">129</div>
-                      <!-- /.product__price -->
-                      
-                    </div>
-                    <button
-                        data-id="1"
-                        class="button button__add-product d-flex justify-content-center align-items-center"
-                      >
-                        <div
-                          class="button__icon_white d-flex justify-content-center align-items-center"
-                        >
-                          <img src="./img/basket-fill.svg" alt="" srcset="" />
-                        </div>
-                      </button>
-                      <!-- /.button__add-product -->
-                  </div>
-                  <!-- /.col-lg-3 probuct-card -->
-                </div>
-                <div class="col-lg-3 product-card">
-                  <div class="product-card__container text-center">
-                    <div class="product-card__img">
-                      <img src="./img/pizza-photo.png" alt="Фото пицы" />
-                    </div>
-                    <!-- /.product-card__img -->
-                    <div class="product__text">
-                      <div class="product__name d-flex justify-content-between">
-                        <strong class="product__title"
-                          >Пица "Четыре сыра"</strong
-                        >
-                        <!-- /.product__title -->
-                        <span class="product__size">32 см</span>
-                        <!-- /.product__size -->
-                      </div>
-                      <p class="product__info">
-                        Тесто, Моцарелла, Чеддер, Синий, Пармезан
-                      </p>
-                      <!-- /.product__info -->
-                    </div>
-                    <!-- /.product__text -->
-                    <div class="product__footer">
-                      <div class="product__price">129</div>
-                      <!-- /.product__price -->
-                      
-                    </div>
-                    <button
-                        data-id="1"
-                        class="button button__add-product d-flex justify-content-center align-items-center"
-                      >
-                        <div
-                          class="button__icon_white d-flex justify-content-center align-items-center"
-                        >
-                          <img src="./img/basket-fill.svg" alt="" srcset="" />
-                        </div>
-                      </button>
-                      <!-- /.button__add-product -->
-                  </div>
-                  <!-- /.col-lg-3 probuct-card -->
-                </div>
-                <div class="col-lg-3 product-card">
-                  <div class="product-card__container text-center">
-                    <div class="product-card__img">
-                      <img src="./img/pizza-photo.png" alt="Фото пицы" />
-                    </div>
-                    <!-- /.product-card__img -->
-                    <div class="product__text">
-                      <div class="product__name d-flex justify-content-between">
-                        <strong class="product__title"
-                          >Пица "Четыре сыра"</strong
-                        >
-                        <!-- /.product__title -->
-                        <span class="product__size">32 см</span>
-                        <!-- /.product__size -->
-                      </div>
-                      <p class="product__info">
-                        Тесто, Моцарелла, Чеддер, Синий, Пармезан
-                      </p>
-                      <!-- /.product__info -->
-                    </div>
-                    <!-- /.product__text -->
-                    <div class="product__footer">
-                      <div class="product__price">129</div>
-                      <!-- /.product__price -->
-                      
-                    </div>
-                    <button
-                        data-id="1"
-                        class="button button__add-product d-flex justify-content-center align-items-center"
-                      >
-                        <div
-                          class="button__icon_white d-flex justify-content-center align-items-center"
-                        >
-                          <img src="./img/basket-fill.svg" alt="" srcset="" />
-                        </div>
-                      </button>
-                      <!-- /.button__add-product -->
-                  </div>
-                  <!-- /.col-lg-3 probuct-card -->
-                </div>
-                <div class="col-lg-3 product-card">
-                  <div class="product-card__container text-center">
-                    <div class="product-card__img">
-                      <img src="./img/pizza-photo.png" alt="Фото пицы" />
-                    </div>
-                    <!-- /.product-card__img -->
-                    <div class="product__text">
-                      <div class="product__name d-flex justify-content-between">
-                        <strong class="product__title"
-                          >Пица "Четыре сыра"</strong
-                        >
-                        <!-- /.product__title -->
-                        <span class="product__size">32 см</span>
-                        <!-- /.product__size -->
-                      </div>
-                      <p class="product__info">
-                        Тесто, Моцарелла, Чеддер, Синий, Пармезан
-                      </p>
-                      <!-- /.product__info -->
-                    </div>
-                    <!-- /.product__text -->
-                    <div class="product__footer">
-                      <div class="product__price">129</div>
-                      <!-- /.product__price -->
-                      
-                    </div>
-                    <button
-                        data-id="1"
-                        class="button button__add-product d-flex justify-content-center align-items-center"
-                      >
-                        <div
-                          class="button__icon_white d-flex justify-content-center align-items-center"
-                        >
-                          <img src="./img/basket-fill.svg" alt="" srcset="" />
-                        </div>
-                      </button>
-                      <!-- /.button__add-product -->
-                  </div>
-                  <!-- /.col-lg-3 probuct-card -->
-                </div>
-                <div class="col-lg-3 product-card">
-                  <div class="product-card__container text-center">
-                    <div class="product-card__img">
-                      <img src="./img/pizza-photo.png" alt="Фото пицы" />
-                    </div>
-                    <!-- /.product-card__img -->
-                    <div class="product__text">
-                      <div class="product__name d-flex justify-content-between">
-                        <strong class="product__title"
-                          >Пица "Четыре сыра"</strong
-                        >
-                        <!-- /.product__title -->
-                        <span class="product__size">32 см</span>
-                        <!-- /.product__size -->
-                      </div>
-                      <p class="product__info">
-                        Тесто, Моцарелла, Чеддер, Синий, Пармезан
-                      </p>
-                      <!-- /.product__info -->
-                    </div>
-                    <!-- /.product__text -->
-                    <div class="product__footer">
-                      <div class="product__price">129</div>
-                      <!-- /.product__price -->
-                      
-                    </div>
-                    <button
-                        data-id="1"
-                        class="button button__add-product d-flex justify-content-center align-items-center"
-                      >
-                        <div
-                          class="button__icon_white d-flex justify-content-center align-items-center"
-                        >
-                          <img src="./img/basket-fill.svg" alt="" srcset="" />
-                        </div>
-                      </button>
-                      <!-- /.button__add-product -->
-                  </div>
-                  <!-- /.col-lg-3 probuct-card -->
-                </div>
-                <div class="col-lg-3 product-card">
-                  <div class="product-card__container text-center">
-                    <div class="product-card__img">
-                      <img src="./img/pizza-photo.png" alt="Фото пицы" />
-                    </div>
-                    <!-- /.product-card__img -->
-                    <div class="product__text">
-                      <div class="product__name d-flex justify-content-between">
-                        <strong class="product__title"
-                          >Пица "Четыре сыра"</strong
-                        >
-                        <!-- /.product__title -->
-                        <span class="product__size">32 см</span>
-                        <!-- /.product__size -->
-                      </div>
-                      <p class="product__info">
-                        Тесто, Моцарелла, Чеддер, Синий, Пармезан
-                      </p>
-                      <!-- /.product__info -->
-                    </div>
-                    <!-- /.product__text -->
-                    <div class="product__footer">
-                      <div class="product__price">129</div>
-                      <!-- /.product__price -->
-                      
-                    </div>
-                    <button
-                        data-id="1"
-                        class="button button__add-product d-flex justify-content-center align-items-center"
-                      >
-                        <div
-                          class="button__icon_white d-flex justify-content-center align-items-center"
-                        >
-                          <img src="./img/basket-fill.svg" alt="" srcset="" />
-                        </div>
-                      </button>
-                      <!-- /.button__add-product -->
-                  </div>
-                  <!-- /.col-lg-3 probuct-card -->
-                </div>
-              </div>
-              <!-- /.row -->
-            </div>
-          </div>
-        </div>
-        <!-- /.row -->
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <button class="button button__icon button__icon_fill">
-              <i class="bi bi-arrow-repeat"></i>
-            </button>
-            <!-- /.button button-icon button-icon_fill -->
-          </div>
-        </div>
-      </div>
-      <!-- /.container -->
-    </section>
-    <!-- /.catalog-top -->
-
-    <section class="inst">
-      <div class="bg-img">
-        <img src="./img/ucrop.svg" alt="Иконка укропа" class="bg-img__ucrop" />
-      </div>
-      <!-- /.bg-img -->
-
-      <div class="inst__link">
-        <a class="inst__text d-flex justify-content-center align-items-center" href="#"
-        >
-          Instagram:&#160;<strong>@vkus_vecherinki</strong>
-        </a>
-        <!-- /.inst__text -->
-      </div>
-      <!-- /.inst__link -->
-      <div class="inst__posts d-flex align-items-stretch">
-        <div class="inst__post">
-          <img src="./img/inst_post-1.jpg" alt="Скрин поста" />
-        </div>
-        <div class="inst__post">
-          <img src="./img/inst_post-2.jpg" alt="Скрин поста" />
-        </div>
-        <div class="inst__post">
-          <img src="./img/inst_post-3.jpg" alt="Скрин поста" />
-        </div>
-        <div class="inst__post">
-          <img src="./img/inst_post-5.jpg" alt="Скрин поста" />
-        </div>
-        <div class="inst__post">
-          <img src="./img/inst_post-5.jpg" alt="Скрин поста" />
-        </div>
-        <div class="inst__post">
-          <img src="./img/inst_post-6.jpg" alt="Скрин поста" />
-        </div>
-      </div>
-      <!-- /.inst__posts -->
-    </section>
-    <!-- /.inst -->
-
-    <section class="tel-phone">
-      <div class="container">
-        <div class="row text-center">
-          <h2>Отправьте заявку на оформление заказаа</h2>
-        </div>
-        <!-- /.row -->
-        <div class="row">
-          <form
-            action=""
-            class="form form-phone d-flex justify-content-stretch"
-          >
-            <input type="text" class="input" placeholder="Ваше имя" />
-            <input type="text" class="input" placeholder="Ваш номер" />
-            <button
-              class="button button__fill d-flex justify-content-center align-items-center"
-            >
-              Отправить <i class="bi bi-arrow-right"></i>
-            </button>
-            <!-- /.button button-fill -->
-          </form>
-          <!-- /.form form-phone -->
-        </div>
-        <!-- /.row -->
-      </div>
-      <!-- /.container -->
-    </section>
-    <!-- /.tel-phone -->
-
-    <footer class="footer">
-      <div class="container">
-        <div class="row d-flex justify-content-between align-items-center">
-          <div class="col-lg-6">
-            © Вкус вечеринки — <br />
-            <small>быстрая доставка еды по Нижнему Новгороду</small>
-          </div>
-          <!-- /.col-lg-5 -->
-          
-          <div class="col-lg-6 link_akseonowwww">
-            <a href="https://vk.com/akseonowww" target="_blank"
-              >Сделал Akseonowww</a
-            >
-          </div>
-          <!-- /.col-lg-5 -->
-        </div>
-        <!-- /.row -->
-      </div>
-      <!-- /.container -->
-      <div class="bg-img">
-        <img class="bg-img__box-pizza" src="./img/box-pizza.png" alt="Коропка из-род пиццы" heght="555.34px" weight="475.44px" />
-      </div>
-      <!-- /.bg-img -->
-    </footer>
-    <!-- /.footer -->
-
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./main.js"></script>
   </body>
 </html>
