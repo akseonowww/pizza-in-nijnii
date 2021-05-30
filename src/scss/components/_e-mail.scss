@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+@import "~normalize.css";
+
+.vkus-v__e-mail {
+    @media only screen and (min-width: 1024px) {
+        display: flex;
+        justify-content: center;
+        margin-top: 140px;
+    }
+
+    .container__contacts {
+        display: none;
+        min-height: 100%;
+
+        a {
+            color: $bgMain;
+
+            &::before {
+                background-color: $bgMain;
+            }
+        }
+
+        @media only screen and (min-width: 1024px) {
+            display: block;
+        }
+
+        .block {
+            height: 100%;
+            margin: 0 auto;
+            color: $bgMain;
+            background: $grdActive;
+            box-shadow: 0px -2px 15px rgba(254, 86, 38, 0.3);
+            border-radius: 24px 24px 0 0;
+            position: relative;
+            padding: 18px 32px 32px;
+
+            @media only screen and (min-width: 1024px) {
+                padding: 40px 60px;
+            }
+
+            &__item {
+                margin: 30px auto 0;
+                display: grid;
+                grid-template-columns: 40% 60%;
+                grid-template-rows: auto auto auto;
+                grid-template-areas:
+                    "r r"
+                    "rr rrr"
+                    "rrrr rrrr";
+
+                @media only screen and (min-width: 768px) {
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: 1fr auto;
+                    grid-template-areas:
+                        "r r r"
+                        "a b c" !important;
+                }
+
+                @media only screen and (min-width: 768px) {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                &-icon {
+                    position: absolute;
+                    top: -35px;
+                    left: 50%;
+                    margin-left: -35px;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: $bgMain;
+                    box-shadow: 0px 0px 12px rgba(153, 153, 153, 0.25);
+                    border-radius: 10000px;
+                    padding: 15px;
+                    height: 70px;
+                    width: 70px;
+
+                    img {
+                        height: 50px;
+                    }
+                }
+
+                strong {
+                    display: block;
+                    font-weight: 700;
+                }
+
+                h2 {
+                    grid-area: r;
+                    padding-bottom: 25px;
+
+                    @media only screen and (min-width: 1024px) {
+                        text-align: left;
+                    }
+                }
+
+                .item__link {
+                    // margin: 10px;
+                    
+
+                    &_social {
+                        grid-area: rr;
+
+                    }
+
+                    &_phone {
+                        grid-area: rrr;
+                        text-align: right;
+                        
+                        @media only screen and (min-width: 1024px) {
+                            text-align: left;
+                            margin: 24px 0;
+                        }
+                    }
+
+                    &_email {
+                        display: block;
+                        margin-top: 15px;
+                        grid-area: rrrr;
+                        width: 100%;
+                        text-align: center;
+
+                        @media only screen and (min-width: 1024px) {
+                            text-align: left;
+                        }
+                    }
+
+                    @media only screen and (min-width: 768px) {
+                        &_social {
+                            grid-area: a;
+                        }
+                        &_phone {
+                            grid-area: b;
+                            text-align: center;
+
+                            @media only screen and (min-width: 1024px) {
+                                text-align: left;
+                            }
+                        }
+                        &_email {
+                            grid-area: c;
+                            margin-top: 0;
+                            text-align: right;
+
+                            @media only screen and (min-width: 1024px) {
+                                text-align: left;
+                            }
+                        }
+                    }
+
+                    a {
+                        font-weight: normal;
+
+                        &::before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media only screen and (min-width: 1024px) {
+            display: block;
+        }
+    }
+
+    .container {
+
+        @media only screen and (min-width: 320px) {
+            margin: auto;
+            width: 90%;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            width: 60%;
+            padding: 0 60px 70px;
+            margin: 0;
+        }
+
+        @media only screen and (min-width: 1224px) {
+            margin-right: 60px;
+            padding-left: 0;
+            padding-right: 0;
+            width: 50%;
+        }
+
+        p {
+            margin: 15px 0;
+            line-height: 140%;
+            text-align: center;
+
+            @media only screen and (min-width: 1224px) {
+                width: 80%;
+            }
+        }
+
+        @media only screen and (min-width: 1024px) {
+            h2, p {
+                text-align: left;
+            }
+        }
+
+        .form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+                "One two"
+                "Three Three";
+
+            &__item input {
+                margin-right: 8px;
+            }
+
+            @media only screen and (min-width: 480px) {
+                grid-template-columns: 0.5fr 1fr;
+            }
+
+            @media only screen and (min-width: 768px) {
+                .one {
+                    margin-left: 45%;
+
+                    @media only screen and (min-width: 1024px) {
+                        margin: 0;
+                    }
+                }
+            }
+
+            @media only screen and (min-width: 1024px) {
+                grid-template-columns: auto auto;
+                grid-template-rows: auto auto;
+
+                @media only screen and (min-width: 1224px) {
+                    grid-template-columns: 0.3fr auto;
+                }
+            }
+
+            @media only screen and (min-width: 1024px) {
+                width: 80%;
+            }
+    
+        }
+
+        .one {
+            grid-area: One;
+        }
+
+        .two {
+            grid-area: two;
+        }
+
+        .three {
+            grid-area: Three;
+            text-align: center;
+
+            @media only screen and (min-width: 768px) {
+                input {
+                    width: 50%;
+                    margin-right: 12px;
+                    margin-top: 20px;
+
+                    @media only screen and (min-width: 1024px) {
+                        margin-right: 0;
+                        width: 100%;
+                    }
+                }
+
+                @media only screen and (min-width: 1024px) {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                }
+            }
+        }
+
+        .input {
+            margin-bottom: 10px;
+        }
+    }
+}
+// pizza
+// sushi
+// beverages
+// desserts
+// salads

@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+		<title>Вкус вечеринки</title>
+	</head>
+	<body>
+		<div id="app" class="container">
+			<div class="vkus-v">
+
+				<section class="vkus-v__main">
+          <div class="vkus-v__header">
+            <header class="header">
+              <div class="header__item">
+                <div class="header__nav">
+                  <div class="nav__item counter-products">
+                    <a href="">Корзина <span class="counter-products__item header__counter">2</span>
+                    </a>
+                  </div>
+                  <div class="nav__item"><a href="">О нас</a></div>
+                  <div class="nav__item"><a href="">Контакты</a></div>
+                </div>
+                <button class="button button__icon user-location">
+                  <img src="./img/00__icon/icon__location.svg" alt="Иконка локации" class="button__icon" />
+                  <span class="button__text">Нижний Новгород</span>
+                </button>
+              </div>
+              <h1>
+                <a class="header__logo logo" href="./index.html">
+                  <div class="logo__img">
+                    <img src="./img/logo.svg" alt="Логотип" />
+                  </div>
+                  <div class="logo__title">
+                    <span class="logo__title_orange"> Вкус </span>
+                    вечеринки
+                  </div>
+                </a>
+              </h1>
+              <div class="container__content content">
+                <div class="content__item">
+                  <button class="button__icon-text">
+                    <div class="button__icon"><img src="./img/00__icon/icon__phone.svg" alt="Иконка телефона" /></div>
+                    <span class="button__text">+7 (952) 786 26-25</span>
+                  </button>
+                  <span class="item__time-work">Рабтаем с 8:00 до 22:00</span>
+                </div>
+              </div>
+              <div class="header__nav_mobile">
+                <button class="button-mb button__icon">
+                  <img src="./img/00__icon/icon__buy.svg" alt="Корзина" />
+                </button>
+                <button class="button-mb button__icon">
+                  <img src="./img/00__icon/icon__menu.svg" alt="Меню" />
+                </button>
+              </div>
+            </header>
+          </div>
+					<div class="main__container container">
+						<div class="container__text">
+							<h2>Доставим еду за 15 минут</h2>
+							<p class="subtitle">
+								Если вы решили расслабиться или у вас появились
+								неожиданные гости, звоните нам. Мы позаботимся о том,
+								чтобы ваш отдых был комфортным, приятным и вкусным.
+							</p>
+						</div>
+						<div class="container__features features">
+							<div class="features">
+								<div class="features__block">
+                  <button class="button button__icon button__icon_active">+</button>
+                  <span class="text">При заказе от <strong class="features__strong">800 руб</strong> доставка бесплатная</span>
+                  <img class="container__img-line" src="./img/line.svg" alt="Пица" />
+                  </div>
+                  <img class="container__img-main" src="./img/01__photo/photo__pizza.png" alt="Пица" />
+							</div>
+						</div>
+						<div class="container__background">
+							<img src="./img/02__imgBG/oyster.svg" alt="Устрица" class="background__item background__item-1" />
+							<img src="./img/02__imgBG/potate.png" alt="Помидор" class="background__item background__item-2" />
+							<img src="./img/02__imgBG/potate_line.svg" alt="Помидор" class="background__item background__item-3" />
+							<img src="./img/02__imgBG/cucumbers.png" alt="Огурцы" class="background__item background__item-4" />
+							<img src="./img/02__imgBG/garlic.png" alt="Грибы" class="background__item background__item-5" />
+							<img src="./img/02__imgBG/garlic_line.svg" alt="Грибы" class="background__item background__item-6" />
+							<img src="./img/02__imgBG/footer-b_2.png" alt="" class="background__item background__item-7" />
+							<img src="./img/02__imgBG/footer-b_3.png" alt="Огурцы" class="background__item background__item-8" />
+							<img src="./img/02__imgBG/pizza_line.svg" alt="Огурцы" class="background__item background__item-9" />
+						</div>
+					</div>
+				</section>
+
+				<section class="vkus-v__products">
+					<div class="container">
+            <h2>Популярные блюда</h2>
+						<div class="tabs">
+                <div class="tabs__nav">
+                  <input class="nav__item" type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+                  <label class="nav__item_input button-fill active" for="tab-btn-1">Пица</label>
+                  <input class="nav__item" type="radio" name="tab-btn" id="tab-btn-2" value="">
+                  <label class="nav__item_input button-fill" for="tab-btn-2">Суши</label>
+                  <input class="nav__item" type="radio" name="tab-btn" id="tab-btn-3" value="">
+                  <label class="nav__item_input button-fill" for="tab-btn-3">Напитки</label>
+                  <input class="nav__item" type="radio" name="tab-btn" id="tab-btn-4" value="">
+                  <label class="nav__item_input button-fill" for="tab-btn-4">Десерты</label>
+                  <input class="nav__item" type="radio" name="tab-btn" id="tab-btn-5" value="">
+                  <label class="nav__item_input button-fill" for="tab-btn-5">Салаты</label>
+                </div>
+                  <div class="tabs-info__item pizza">
+                    <div class="product__item">
+                      <img
+                        src="https://dodopizza-a.akamaihd.net/static/Img/Products/5dffe4c7d3bc49668f50c1d08d920992_292x292.jpeg"
+                        alt="Фото прКартинка продуктаодукта"
+                        class="product__img"
+                      />
+                      <div class="product__text">
+                        <div class="title">
+                          <h5>Пепперони фреш</h5>
+                          <small class="product__size">32 см</small>
+                        </div>
+                        <div class="product__descr">
+                          Пикантная пепперони, увеличенная порция
+                          моцареллы, томаты, томатный соус
+                        </div>
+                        <div class="product__footer">
+                          <p class="product__price">249 ₽</p>
+                          <button class="button button__icon-text">
+                            <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                            <span class="button__text">В корзину</span>
+                          </button>
+                        </div>
+                        <div class="product__counter">
+                          <button class="button counter__min">-</button>
+                          <div class="counter__value">1</div>
+                          <button class="button counter__pluse">+</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__item">
+                      <img
+                        src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/fc4d663d-fb00-48ea-8391-7a4648553f25.jpg"
+                        alt="Картинка продукта"
+                        class="product__img"
+                      />
+                      <div class="product__text">
+                        <div class="title">
+                          <h5>Сырный цыпленок</h5>
+                          <small class="product__size">32 см</small>
+                        </div>
+                        <div class="product__descr">
+                          Цыпленок, моцарелла, сырный соус, томаты
+                        </div>
+                        <div class="product__footer">
+                          <p class="product__price">249 ₽</p>
+                          <button class="button button__icon-text">
+                            <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                            <span class="button__text">В корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__item">
+                      <img
+                        src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/d640c5fb-0944-4123-9363-c5706c725546.jpg"
+                        alt="Картинка продукта"
+                        class="product__img"
+                      />
+                      <div class="product__text">
+                        <div class="title">
+                          <h5>Гавайская</h5>
+                          <small class="product__size">64 см</small>
+                        </div>
+                        <div class="product__descr">
+                          Цыпленок, ананасы, моцарелла, томатный соус
+                        </div>
+                        <div class="product__footer">
+                          <p class="product__price">249 ₽</p>
+                          <button class="button button__icon-text">
+                            <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                            <span class="button__text">В корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__item">
+                      <img
+                        src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/dc5dc4e9-932a-4abf-9472-dfb6326ea9ee.jpg"
+                        alt="Картинка продукта"
+                        class="product__img"
+                      />
+                      <div class="product__text">
+                        <div class="title">
+                          <h5>Мексиканская</h5>
+                          <small class="product__size">32 см</small>
+                        </div>
+                        <div class="product__descr">
+                          Острый цыпленок, острый перец халапеньо, соус
+                          сальса, томаты, сладкий перец, красный лук,
+                          моцарелла, томатный соус
+                        </div>
+                        <div class="product__footer">
+                          <p class="product__price">249 ₽</p>
+                          <button class="button button__icon-text">
+                            <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                            <span class="button__text">В корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__item">
+                      <img
+                        src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/9c046e19-b7a6-47f5-b2be-91bb9d77a74b.jpg"
+                        alt="Картинка продукта"
+                        class="product__img"
+                      />
+                      <div class="product__text">
+                        <div class="title">
+                          <h5>Двойная пепперони</h5>
+                          <small class="product__size">32 см</small>
+                        </div>
+                        <div class="product__descr">
+                          Пикантная пепперони, увеличенная порция
+                          моцареллы, томатный соус
+                        </div>
+                        <div class="product__footer">
+                          <p class="product__price">249 ₽</p>
+                          <button class="button button__icon-text">
+                            <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                            <span class="button__text">В корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__item">
+                      <img
+                        src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/8b052931-395f-4b38-8af0-55f6fbd7c9e5.jpg"
+                        alt="Картинка продукта"
+                        class="product__img"
+                      />
+                      <div class="product__text">
+                        <div class="title">
+                          <h5>Супермясная</h5>
+                          <small class="product__size">32 см</small>
+                        </div>
+                        <div class="product__descr">
+                          Пикантная пепперони, цыпленок, острая чоризо,
+                          бекон, митболы из говядины, моцарелла, томатный
+                          соус
+                        </div>
+                        <div class="product__footer">
+                          <p class="product__price">249 ₽</p>
+                          <button class="button button__icon-text">
+                            <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                            <span class="button__text">В корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__item">
+                      <img
+                        src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/462796e6-a697-4dc6-8d7a-9dafbba7f8d5.jpg"
+                        alt="Картинка продукта"
+                        class="product__img"
+                      />
+                      <div class="product__text">
+                        <div class="title">
+                          <h5>Мясная</h5>
+                          <small class="product__size">32 см</small>
+                        </div>
+                        <div class="product__descr">
+                          Цыпленок, ветчина, пикантная пепперони, острая
+                          чоризо, моцарелла, томатный соус
+                        </div>
+                        <div class="product__footer">
+                          <p class="product__price">249 ₽</p>
+                          <button class="button button__icon-text">
+                            <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                            <span class="button__text">В корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__item">
+                    <img
+                      src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/2822916b-039c-4dfc-916a-73ca0daa9320.jpg"
+                      alt="Картинка продукта"
+                      class="product__img"
+                    />
+                    <div class="product__text">
+                      <div class="title">
+                        <h5>Цыпленок ранч</h5>
+                        <small class="product__size">32 см</small>
+                      </div>
+                      <div class="product__descr">
+                        Цыпленок, ветчина, соус ранч, моцарелла, томаты,
+                        чеснок
+                      </div>
+                      <div class="product__footer">
+                        <p class="product__price">249 ₽</p>
+                        <button class="button button__icon-text">
+                          <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                          <span class="button__text">В корзину</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="tabs-info__item sushi">
+                    <div class="product__item">
+                      <img
+                        src="https://thumbs.dreamstime.com/b/%D1%81%D1%83%D1%88%D0%B8-%D0%BA%D1%80%D0%B5%D0%BD%D1%8B-%D0%BD%D0%B0-%D0%B1%D0%B5%D0%BB%D0%B8%D0%B7%D0%BD%D0%B5-%D0%B8%D0%B7%D0%BE%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BB%D0%B8-%D0%BF%D1%80%D0%B5%D0%B4%D0%BF%D0%BE%D1%81%D1%8B%D0%BB%D0%BA%D1%83-126806427.jpg"
+                        alt="Фото прКартинка продуктаодукта"
+                        class="product__img"
+                      />
+                      <div class="product__text">
+                        <div class="title">
+                          <h5>Пепперони фреш</h5>
+                          <small class="product__size">32 см</small>
+                        </div>
+                        <div class="product__descr">
+                          Пикантная пепперони, увеличенная порция
+                          моцареллы, томаты, томатный соус
+                        </div>
+                        <div class="product__footer">
+                          <p class="product__price">249 ₽</p>
+                          <button class="button button__icon-text">
+                            <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                            <span class="button__text">В корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__item">
+                      <img
+                        src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/fc4d663d-fb00-48ea-8391-7a4648553f25.jpg"
+                        alt="Картинка продукта"
+                        class="product__img"
+                      />
+                      <div class="product__text">
+                        <div class="title">
+                          <h5>Сырный цыпленок</h5>
+                          <small class="product__size">32 см</small>
+                        </div>
+                        <div class="product__descr">
+                          Цыпленок, моцарелла, сырный соус, томаты
+                        </div>
+                        <div class="product__footer">
+                          <p class="product__price">249 ₽</p>
+                          <button class="button button__icon-text">
+                            <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                            <span class="button__text">В корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__item">
+                      <img
+                        src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/d640c5fb-0944-4123-9363-c5706c725546.jpg"
+                        alt="Картинка продукта"
+                        class="product__img"
+                      />
+                      <div class="product__text">
+                        <div class="title">
+                          <h5>Гавайская</h5>
+                          <small class="product__size">64 см</small>
+                        </div>
+                        <div class="product__descr">
+                          Цыпленок, ананасы, моцарелла, томатный соус
+                        </div>
+                        <div class="product__footer">
+                          <p class="product__price">249 ₽</p>
+                          <button class="button button__icon-text">
+                            <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                            <span class="button__text">В корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__item">
+                      <img
+                        src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/dc5dc4e9-932a-4abf-9472-dfb6326ea9ee.jpg"
+                        alt="Картинка продукта"
+                        class="product__img"
+                      />
+                      <div class="product__text">
+                        <div class="title">
+                          <h5>Мексиканская</h5>
+                          <small class="product__size">32 см</small>
+                        </div>
+                        <div class="product__descr">
+                          Острый цыпленок, острый перец халапеньо, соус
+                          сальса, томаты, сладкий перец, красный лук,
+                          моцарелла, томатный соус
+                        </div>
+                        <div class="product__footer">
+                          <p class="product__price">249 ₽</p>
+                          <button class="button button__icon-text">
+                            <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                            <span class="button__text">В корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__item">
+                      <img
+                        src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/9c046e19-b7a6-47f5-b2be-91bb9d77a74b.jpg"
+                        alt="Картинка продукта"
+                        class="product__img"
+                      />
+                      <div class="product__text">
+                        <div class="title">
+                          <h5>Двойная пепперони</h5>
+                          <small class="product__size">32 см</small>
+                        </div>
+                        <div class="product__descr">
+                          Пикантная пепперони, увеличенная порция
+                          моцареллы, томатный соус
+                        </div>
+                        <div class="product__footer">
+                          <p class="product__price">249 ₽</p>
+                          <button class="button button__icon-text">
+                            <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                            <span class="button__text">В корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__item">
+                      <img
+                        src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/8b052931-395f-4b38-8af0-55f6fbd7c9e5.jpg"
+                        alt="Картинка продукта"
+                        class="product__img"
+                      />
+                      <div class="product__text">
+                        <div class="title">
+                          <h5>Супермясная</h5>
+                          <small class="product__size">32 см</small>
+                        </div>
+                        <div class="product__descr">
+                          Пикантная пепперони, цыпленок, острая чоризо,
+                          бекон, митболы из говядины, моцарелла, томатный
+                          соус
+                        </div>
+                        <div class="product__footer">
+                          <p class="product__price">249 ₽</p>
+                          <button class="button button__icon-text">
+                            <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                            <span class="button__text">В корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__item">
+                      <img
+                        src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/462796e6-a697-4dc6-8d7a-9dafbba7f8d5.jpg"
+                        alt="Картинка продукта"
+                        class="product__img"
+                      />
+                      <div class="product__text">
+                        <div class="title">
+                          <h5>Мясная</h5>
+                          <small class="product__size">32 см</small>
+                        </div>
+                        <div class="product__descr">
+                          Цыпленок, ветчина, пикантная пепперони, острая
+                          чоризо, моцарелла, томатный соус
+                        </div>
+                        <div class="product__footer">
+                          <p class="product__price">249 ₽</p>
+                          <button class="button button__icon-text">
+                            <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                            <span class="button__text">В корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__item">
+                      <img
+                        src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/2822916b-039c-4dfc-916a-73ca0daa9320.jpg"
+                        alt="Картинка продукта"
+                        class="product__img"
+                      />
+                      <div class="product__text">
+                        <div class="title">
+                          <h5>Цыпленок ранч</h5>
+                          <small class="product__size">32 см</small>
+                        </div>
+                        <div class="product__descr">
+                          Цыпленок, ветчина, соус ранч, моцарелла, томаты,
+                          чеснок
+                        </div>
+                        <div class="product__footer">
+                          <p class="product__price">249 ₽</p>
+                          <button class="button button__icon-text">
+                            <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                            <span class="button__text">В корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tabs-info__item beverages">
+              <div class="product__item">
+                <img
+                  src="https://dodopizza-a.akamaihd.net/static/Img/Products/5dffe4c7d3bc49668f50c1d08d920992_292x292.jpeg"
+                  alt="Фото прКартинка продуктаодукта"
+                  class="product__img"
+                />
+                <div class="product__text">
+                  <div class="title">
+                    <h5>Пепперони фреш</h5>
+                    <small class="product__size">32 см</small>
+                  </div>
+                  <div class="product__descr">
+                    Пикантная пепперони, увеличенная порция
+                    моцареллы, томаты, томатный соус
+                  </div>
+                  <div class="product__footer">
+                    <p class="product__price">249 ₽</p>
+                    <button class="button button__icon-text">
+                      <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                      <span class="button__text">В корзину</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item">
+                <img
+                  src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/fc4d663d-fb00-48ea-8391-7a4648553f25.jpg"
+                  alt="Картинка продукта"
+                  class="product__img"
+                />
+                <div class="product__text">
+                  <div class="title">
+                    <h5>Сырный цыпленок</h5>
+                    <small class="product__size">32 см</small>
+                  </div>
+                  <div class="product__descr">
+                    Цыпленок, моцарелла, сырный соус, томаты
+                  </div>
+                  <div class="product__footer">
+                    <p class="product__price">249 ₽</p>
+                    <button class="button button__icon-text">
+                      <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                      <span class="button__text">В корзину</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item">
+                <img
+                  src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/d640c5fb-0944-4123-9363-c5706c725546.jpg"
+                  alt="Картинка продукта"
+                  class="product__img"
+                />
+                <div class="product__text">
+                  <div class="title">
+                    <h5>Гавайская</h5>
+                    <small class="product__size">64 см</small>
+                  </div>
+                  <div class="product__descr">
+                    Цыпленок, ананасы, моцарелла, томатный соус
+                  </div>
+                  <div class="product__footer">
+                    <p class="product__price">249 ₽</p>
+                    <button class="button button__icon-text">
+                      <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                      <span class="button__text">В корзину</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item">
+                <img
+                  src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/dc5dc4e9-932a-4abf-9472-dfb6326ea9ee.jpg"
+                  alt="Картинка продукта"
+                  class="product__img"
+                />
+                <div class="product__text">
+                  <div class="title">
+                    <h5>Мексиканская</h5>
+                    <small class="product__size">32 см</small>
+                  </div>
+                  <div class="product__descr">
+                    Острый цыпленок, острый перец халапеньо, соус
+                    сальса, томаты, сладкий перец, красный лук,
+                    моцарелла, томатный соус
+                  </div>
+                  <div class="product__footer">
+                    <p class="product__price">249 ₽</p>
+                    <button class="button button__icon-text">
+                      <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                      <span class="button__text">В корзину</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item">
+                <img
+                  src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/9c046e19-b7a6-47f5-b2be-91bb9d77a74b.jpg"
+                  alt="Картинка продукта"
+                  class="product__img"
+                />
+                <div class="product__text">
+                  <div class="title">
+                    <h5>Двойная пепперони</h5>
+                    <small class="product__size">32 см</small>
+                  </div>
+                  <div class="product__descr">
+                    Пикантная пепперони, увеличенная порция
+                    моцареллы, томатный соус
+                  </div>
+                  <div class="product__footer">
+                    <p class="product__price">249 ₽</p>
+                    <button class="button button__icon-text">
+                      <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                      <span class="button__text">В корзину</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item">
+                <img
+                  src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/8b052931-395f-4b38-8af0-55f6fbd7c9e5.jpg"
+                  alt="Картинка продукта"
+                  class="product__img"
+                />
+                <div class="product__text">
+                  <div class="title">
+                    <h5>Супермясная</h5>
+                    <small class="product__size">32 см</small>
+                  </div>
+                  <div class="product__descr">
+                    Пикантная пепперони, цыпленок, острая чоризо,
+                    бекон, митболы из говядины, моцарелла, томатный
+                    соус
+                  </div>
+                  <div class="product__footer">
+                    <p class="product__price">249 ₽</p>
+                    <button class="button button__icon-text">
+                      <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                      <span class="button__text">В корзину</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item">
+                <img
+                  src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/462796e6-a697-4dc6-8d7a-9dafbba7f8d5.jpg"
+                  alt="Картинка продукта"
+                  class="product__img"
+                />
+                <div class="product__text">
+                  <div class="title">
+                    <h5>Мясная</h5>
+                    <small class="product__size">32 см</small>
+                  </div>
+                  <div class="product__descr">
+                    Цыпленок, ветчина, пикантная пепперони, острая
+                    чоризо, моцарелла, томатный соус
+                  </div>
+                  <div class="product__footer">
+                    <p class="product__price">249 ₽</p>
+                    <button class="button button__icon-text">
+                      <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                      <span class="button__text">В корзину</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item">
+                <img
+                  src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/2822916b-039c-4dfc-916a-73ca0daa9320.jpg"
+                  alt="Картинка продукта"
+                  class="product__img"
+                />
+                <div class="product__text">
+                  <div class="title">
+                    <h5>Цыпленок ранч</h5>
+                    <small class="product__size">32 см</small>
+                  </div>
+                  <div class="product__descr">
+                    Цыпленок, ветчина, соус ранч, моцарелла, томаты,
+                    чеснок
+                  </div>
+                  <div class="product__footer">
+                    <p class="product__price">249 ₽</p>
+                    <button class="button button__icon-text">
+                      <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                      <span class="button__text">В корзину</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+                  </div>
+                  <div class="tabs-info__item desserts">
+    <div class="product__item">
+                <img
+                  src="https://dodopizza-a.akamaihd.net/static/Img/Products/5dffe4c7d3bc49668f50c1d08d920992_292x292.jpeg"
+                  alt="Фото прКартинка продуктаодукта"
+                  class="product__img"
+                />
+                <div class="product__text">
+                  <div class="title">
+                    <h5>Пепперони фреш</h5>
+                    <small class="product__size">32 см</small>
+                  </div>
+                  <div class="product__descr">
+                    Пикантная пепперони, увеличенная порция
+                    моцареллы, томаты, томатный соус
+                  </div>
+                  <div class="product__footer">
+                    <p class="product__price">249 ₽</p>
+                    <button class="button button__icon-text">
+                      <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                      <span class="button__text">В корзину</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item">
+                <img
+                  src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/fc4d663d-fb00-48ea-8391-7a4648553f25.jpg"
+                  alt="Картинка продукта"
+                  class="product__img"
+                />
+                <div class="product__text">
+                  <div class="title">
+                    <h5>Сырный цыпленок</h5>
+                    <small class="product__size">32 см</small>
+                  </div>
+                  <div class="product__descr">
+                    Цыпленок, моцарелла, сырный соус, томаты
+                  </div>
+                  <div class="product__footer">
+                    <p class="product__price">249 ₽</p>
+                    <button class="button button__icon-text">
+                      <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                      <span class="button__text">В корзину</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item">
+                <img
+                  src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/d640c5fb-0944-4123-9363-c5706c725546.jpg"
+                  alt="Картинка продукта"
+                  class="product__img"
+                />
+                <div class="product__text">
+                  <div class="title">
+                    <h5>Гавайская</h5>
+                    <small class="product__size">64 см</small>
+                  </div>
+                  <div class="product__descr">
+                    Цыпленок, ананасы, моцарелла, томатный соус
+                  </div>
+                  <div class="product__footer">
+                    <p class="product__price">249 ₽</p>
+                    <button class="button button__icon-text">
+                      <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                      <span class="button__text">В корзину</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item">
+                <img
+                  src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/dc5dc4e9-932a-4abf-9472-dfb6326ea9ee.jpg"
+                  alt="Картинка продукта"
+                  class="product__img"
+                />
+                <div class="product__text">
+                  <div class="title">
+                    <h5>Мексиканская</h5>
+                    <small class="product__size">32 см</small>
+                  </div>
+                  <div class="product__descr">
+                    Острый цыпленок, острый перец халапеньо, соус
+                    сальса, томаты, сладкий перец, красный лук,
+                    моцарелла, томатный соус
+                  </div>
+                  <div class="product__footer">
+                    <p class="product__price">249 ₽</p>
+                    <button class="button button__icon-text">
+                      <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                      <span class="button__text">В корзину</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item">
+                <img
+                  src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/9c046e19-b7a6-47f5-b2be-91bb9d77a74b.jpg"
+                  alt="Картинка продукта"
+                  class="product__img"
+                />
+                <div class="product__text">
+                  <div class="title">
+                    <h5>Двойная пепперони</h5>
+                    <small class="product__size">32 см</small>
+                  </div>
+                  <div class="product__descr">
+                    Пикантная пепперони, увеличенная порция
+                    моцареллы, томатный соус
+                  </div>
+                  <div class="product__footer">
+                    <p class="product__price">249 ₽</p>
+                    <button class="button button__icon-text">
+                      <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                      <span class="button__text">В корзину</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item">
+                <img
+                  src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/8b052931-395f-4b38-8af0-55f6fbd7c9e5.jpg"
+                  alt="Картинка продукта"
+                  class="product__img"
+                />
+                <div class="product__text">
+                  <div class="title">
+                    <h5>Супермясная</h5>
+                    <small class="product__size">32 см</small>
+                  </div>
+                  <div class="product__descr">
+                    Пикантная пепперони, цыпленок, острая чоризо,
+                    бекон, митболы из говядины, моцарелла, томатный
+                    соус
+                  </div>
+                  <div class="product__footer">
+                    <p class="product__price">249 ₽</p>
+                    <button class="button button__icon-text">
+                      <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                      <span class="button__text">В корзину</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item">
+                <img
+                  src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/462796e6-a697-4dc6-8d7a-9dafbba7f8d5.jpg"
+                  alt="Картинка продукта"
+                  class="product__img"
+                />
+                <div class="product__text">
+                  <div class="title">
+                    <h5>Мясная</h5>
+                    <small class="product__size">32 см</small>
+                  </div>
+                  <div class="product__descr">
+                    Цыпленок, ветчина, пикантная пепперони, острая
+                    чоризо, моцарелла, томатный соус
+                  </div>
+                  <div class="product__footer">
+                    <p class="product__price">249 ₽</p>
+                    <button class="button button__icon-text">
+                      <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                      <span class="button__text">В корзину</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item">
+                <img
+                  src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/2822916b-039c-4dfc-916a-73ca0daa9320.jpg"
+                  alt="Картинка продукта"
+                  class="product__img"
+                />
+                <div class="product__text">
+                  <div class="title">
+                    <h5>Цыпленок ранч</h5>
+                    <small class="product__size">32 см</small>
+                  </div>
+                  <div class="product__descr">
+                    Цыпленок, ветчина, соус ранч, моцарелла, томаты,
+                    чеснок
+                  </div>
+                  <div class="product__footer">
+                    <p class="product__price">249 ₽</p>
+                    <button class="button button__icon-text">
+                      <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                      <span class="button__text">В корзину</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+                  </div>
+                  <div class="tabs-info__item salads">
+                  <div class="product__item">
+                      <img
+                        src="https://dodopizza-a.akamaihd.net/static/Img/Products/5dffe4c7d3bc49668f50c1d08d920992_292x292.jpeg"
+                        alt="Фото прКартинка продуктаодукта"
+                        class="product__img"
+                      />
+                      <div class="product__text">
+                        <div class="title">
+                          <h5>Пепперони фреш</h5>
+                          <small class="product__size">32 см</small>
+                        </div>
+                        <div class="product__descr">
+                          Пикантная пепперони, увеличенная порция
+                          моцареллы, томаты, томатный соус
+                        </div>
+                        <div class="product__footer">
+                          <p class="product__price">249 ₽</p>
+                          <button class="button button__icon-text">
+                            <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                            <span class="button__text">В корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__item">
+                      <img
+                        src="https://yandex-images.clstorage.net/54dTE1R63/75dc3btD73d/NCP4vayfd3ZkLW65pDgXRujO4X9coNr_SUVhwdrnNUbAdpRjjO1a271dTfa2OYi1TqpJWDagwhFdnGFvesq8CTRkbDivSCUyca85rmr2mR0jwG-gFL7S9dhRdwGN4DODES2NshZwWpfqgA-u730bfUR6HACr4Q5PUI-kKXwU85Qjsfz2rQU__rZtZfMjvBwQrwpibRU8UXKSGfEESSWpAtnsz2kY_drU4YmB4S7xmjyKt1AIZqhJh1cJqWF8nXMVLT42Ne9NvrI_L218prpU1yfKr66Xe1L1nVo9jAYl7AufI4fsGPGeVibIgejhPp-7zPlcSKsowUcXweqpNl78l2o7fjusybk2t2Kve-S1EpEoCyDmWjZes57ScQTFa2OH2WwDa5k0UNZuAQXgJjvQsY690YWr60iHU0Vt5HZZvBymNrewLE9w_nRm4vssdxDc6sLiblu8E7NfHL0NAapiwZ0jRunaNBITaYjPYa88F79COZ1HIKmAxJBHZWc01zuerTNxe6pKMj_-7-y3ZHWRkauEqO6Ys1T_k9C-xM-l4wtWL4CoFjAVnGJChysnvV8-yDgYjmghQg5TTavttRp53KY-uzmnh3gxNeWrd2fw0FtojCen1HeR8N7dcorP52iKV2RIKB77G1fsA09s4rKWPUA9Wcairg1NlkBtobwXvd0o-Ps-50hzu_KtqrOoMZAXoA0iLFOy0zJe2DhBgCujz1lpy6vXux7WYcOMo2fwVzGLv1RCY6NCSRcFICn_GD2Qarpw-61AcLo0JmLwrfvfVu9EbWRQs5A21p0xDAAmoYJW4EcmX3ja12yPRWso85p0SvfbBSBlh8ZeSKqv8JWyHOF1dvRpBrb-tifg92472xQrCyUlVPpYfJ1a98AJ5eOLn2-CJx86VdslgQmg7rCUPkAy2wnm6woNHE2l7TCR_FPjfPn1ZkT1_zynqHAsuR_cZsNoZZ96ErwdWbBKhw"
+                        alt="Картинка продукта"
+                        class="product__img"
+                      />
+                      <div class="product__text">
+                        <div class="title">
+                          <h5>Сырный цыпленок</h5>
+                          <small class="product__size">32 см</small>
+                        </div>
+                        <div class="product__descr">
+                          Цыпленок, моцарелла, сырный соус, томаты
+                        </div>
+                        <div class="product__footer">
+                          <p class="product__price">249 ₽</p>
+                          <button class="button button__icon-text">
+                            <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                            <span class="button__text">В корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__item">
+                      <img
+                        src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/d640c5fb-0944-4123-9363-c5706c725546.jpg"
+                        alt="Картинка продукта"
+                        class="product__img"
+                      />
+                      <div class="product__text">
+                        <div class="title">
+                          <h5>Гавайская</h5>
+                          <small class="product__size">64 см</small>
+                        </div>
+                        <div class="product__descr">
+                          Цыпленок, ананасы, моцарелла, томатный соус
+                        </div>
+                        <div class="product__footer">
+                          <p class="product__price">249 ₽</p>
+                          <button class="button button__icon-text">
+                            <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                            <span class="button__text">В корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__item">
+                      <img
+                        src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/dc5dc4e9-932a-4abf-9472-dfb6326ea9ee.jpg"
+                        alt="Картинка продукта"
+                        class="product__img"
+                      />
+                      <div class="product__text">
+                        <div class="title">
+                          <h5>Мексиканская</h5>
+                          <small class="product__size">32 см</small>
+                        </div>
+                        <div class="product__descr">
+                          Острый цыпленок, острый перец халапеньо, соус
+                          сальса, томаты, сладкий перец, красный лук,
+                          моцарелла, томатный соус
+                        </div>
+                        <div class="product__footer">
+                          <p class="product__price">249 ₽</p>
+                          <button class="button button__icon-text">
+                            <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                            <span class="button__text">В корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__item">
+                      <img
+                        src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/9c046e19-b7a6-47f5-b2be-91bb9d77a74b.jpg"
+                        alt="Картинка продукта"
+                        class="product__img"
+                      />
+                      <div class="product__text">
+                        <div class="title">
+                          <h5>Двойная пепперони</h5>
+                          <small class="product__size">32 см</small>
+                        </div>
+                        <div class="product__descr">
+                          Пикантная пепперони, увеличенная порция
+                          моцареллы, томатный соус
+                        </div>
+                        <div class="product__footer">
+                          <p class="product__price">249 ₽</p>
+                          <button class="button button__icon-text">
+                            <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                            <span class="button__text">В корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__item">
+                      <img
+                        src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/8b052931-395f-4b38-8af0-55f6fbd7c9e5.jpg"
+                        alt="Картинка продукта"
+                        class="product__img"
+                      />
+                      <div class="product__text">
+                        <div class="title">
+                          <h5>Супермясная</h5>
+                          <small class="product__size">32 см</small>
+                        </div>
+                        <div class="product__descr">
+                          Пикантная пепперони, цыпленок, острая чоризо,
+                          бекон, митболы из говядины, моцарелла, томатный
+                          соус
+                        </div>
+                        <div class="product__footer">
+                          <p class="product__price">249 ₽</p>
+                          <button class="button button__icon-text">
+                            <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                            <span class="button__text">В корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__item">
+                      <img
+                        src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/462796e6-a697-4dc6-8d7a-9dafbba7f8d5.jpg"
+                        alt="Картинка продукта"
+                        class="product__img"
+                      />
+                      <div class="product__text">
+                        <div class="title">
+                          <h5>Мясная</h5>
+                          <small class="product__size">32 см</small>
+                        </div>
+                        <div class="product__descr">
+                          Цыпленок, ветчина, пикантная пепперони, острая
+                          чоризо, моцарелла, томатный соус
+                        </div>
+                        <div class="product__footer">
+                          <p class="product__price">249 ₽</p>
+                          <button class="button button__icon-text">
+                            <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                            <span class="button__text">В корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__item">
+                      <img
+                        src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/2822916b-039c-4dfc-916a-73ca0daa9320.jpg"
+                        alt="Картинка продукта"
+                        class="product__img"
+                      />
+                      <div class="product__text">
+                        <div class="title">
+                          <h5>Цыпленок ранч</h5>
+                          <small class="product__size">32 см</small>
+                        </div>
+                        <div class="product__descr">
+                          Цыпленок, ветчина, соус ранч, моцарелла, томаты,
+                          чеснок
+                        </div>
+                        <div class="product__footer">
+                          <p class="product__price">249 ₽</p>
+                          <button class="button button__icon-text">
+                            <img src="./img/00__icon/icon__bug-white.svg" alt="Иконка корзины" />
+                            <span class="button__text">В корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <button class="button button__icon button__icon_update">
+              <img src="./img/00__icon/icon__update.svg" alt="Обновление карточек товаров">
+            </button>
+					</div>
+				</section>
+
+				<section class="vkus-v__insta">
+          <div class="container">
+            <div class="container__block">
+              <div class="block__item">
+                <div class="block__item-icon"><img src="./img/00__icon/icon__instagram.svg" alt="Иконка Instagram"></div>
+                <p class="block__text">
+                  Выложи сторис в Instagram с нашей едой и получи промокод на бесплатную пиццу. </br> Не забудь подписаться на нас в Instagram: </br> <a href="https://www.instagram.com/vkus_vecherinki/">@vkus_vecherinki</a>
+                </p>
+                <button class="button button_outline">
+                  <span class="button__text">Подробнее</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+				<section class="vkus-v__e-mail">
+          <div class="container">
+            <h2>Узнай первым о новых скидках</h2>
+            <p>Скидки на какие блюда ты хочешь получать на свою эл. почту?</p>
+            <form action="#" class="form form__mailling">
+              <div class="form__block one">
+                <label class="form__item" for="dish-1" id="form-mail-pizza">
+                  <input type="checkbox" id="dish-1" />Пица
+                </label>
+                <label class="form__item" for="dish-2" id="formMailBeverages">
+                  <input type="checkbox" id="dish-2" />Напитки
+                </label>
+                <label class="form__item" for="dish-3" id="formMailDesserts">
+                  <input type="checkbox" id="dish-3" />Дессерты
+                </label>
+              </div>
+              <div class="form__block two">
+                <label class="form__item" for="dish-4" id="formMailSalads">
+                  <input type="checkbox" id="dish-4" />Салаты
+                </label>
+                <label class="form__item" for="dish-5" id="formMailSushi">
+                  <input type="checkbox" id="dish-5" />Суши
+                </label>
+                <label class="form__item" for="dish-6" id="formMailAll">
+                  <input type="checkbox" id="dish-6" />Все блюда
+                </label>
+              </div>
+              <div class="form__block three">
+                <input
+                type="email"
+                name="userEmail"
+                id="userEmail"
+                class="input"
+                placeholder="Эл. почта"
+              />
+              <button class="button button_fill">Подписаться</button>
+              </div>
+            </form>
+          </div>
+          <div class="container__contacts">
+            <div class="block">
+              <div class="block__item-icon">
+                <img src="./img/00__icon/icon__swap.svg" alt="Иконка связи" class="icon__contacts">
+              </div>
+              <div class="block__item">
+                <h2>Контакты</h2>
+                <span class="item__link item__link_social">
+                  <strong>Соц-сети</strong>
+                  <a href="https://www.instagram.com/vkus_vecherinki/">Instagram</a>
+                </span>
+                <span class="item__link item__link_phone">
+                  <strong>Телефон</strong>
+                  <a href="tel:+79527862625">+7 (952) 786 26-25</a>
+                </span>
+                <span class="item__link item__link_email">
+                  <strong>Эл. почта</strong>
+                  <a href="mailto:help@vkus_vecherinki.ru">help@vkus_vecherinki.ru</a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="vkus-v__contacts">
+          <div class="container">
+            <div class="block">
+              <div class="block__item-icon">
+                <img src="./img/00__icon/icon__swap.svg" alt="Иконка связи" class="icon__contacts">
+              </div>
+              <div class="block__item">
+                <h2>Контакты</h2>
+                <span class="item__link item__link_social">
+                  <strong>Соц-сети</strong>
+                  <a href="https://www.instagram.com/vkus_vecherinki/">Instagram</a>
+                </span>
+                <span class="item__link item__link_phone">
+                  <strong>Телефон</strong>
+                  <a href="tel:+79527862625">+7 (952) 786 26-25</a>
+                </span>
+                <span class="item__link item__link_email">
+                  <strong>Эл. почта</strong>
+                  <a href="mailto:help@vkus_vecherinki.ru">help@vkus_vecherinki.ru</a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+				<section class="vkus-v__footer">
+          <div class="footer__container container">
+            <div class="container__header">
+              <div class="container__item">
+                <button class="button button__icon user-location">
+                  <img src="./img/00__icon/icon__location_dark.svg" alt="Иконка локации" class="button__icon" />
+                  <span class="button__text">Нижний Новгород</span>
+                </button>
+              </div>
+              <div class="container__item nav">
+                <div class="nav__item counter-products">
+                  <a href="">
+                    Корзина
+                    <span class="counter-products__item">2</span>
+                  </a>
+                </div>
+                <div class="nav__item"><a href="">О нас</a></div>
+                <div class="nav__item"><a href="">Контакты</a></div>
+              </div>
+            </div>
+            <div class="container__content content">
+              <div class="content__item">
+                <button class="button__icon-text">
+                  <div class="button__icon"><img src="./img/00__icon/icon__phone.svg" alt="Иконка телефона" /></div>
+                  <span class="button__text">+7 (952) 786 26-25</span>
+                </button>
+                <span class="item__time-work">Рабтаем с 8:00 до 22:00</span>
+              </div>
+            </div>
+            <div class="container__footer">
+              <div class="footer__title">© Вкус вечеринки</div>
+              <h1>
+                <a class="header__logo logo" href="./index.html">
+                  <div class="logo__img">
+                    <img src="./img/logo_black.svg" alt="Логотип" />
+                  </div>
+                  <div class="logo__title">
+                    <span class="logo__title_orange"> Вкус </span>
+                    вечеринки
+                  </div>
+                </a>
+              </h1>
+              <p>
+                Сайт сделал <a href="#">Akseonowww</a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+				<!-- <div class="menu">
+					<h1>Меню</h1>
+				</div> -->
+			</div>
+		</div>
+	</body>
+</html>

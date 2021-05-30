@@ -1,27 +1,57 @@
 {
-  "name": "pizza-in-nijnii",
+  "name": "vkus-vecherinki",
   "version": "1.0.0",
-  "description": "Лендинг пицерии, которая доставляет пицу по Нижнему Новгороду.",
-  "main": "main.js",
+  "description": "Pizza",
+  "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prettier": "prettier --write ./*.*"
+    "start": "cross-env NODE_ENV=development webpack serve --open",
+    "build": "cross-env NODE_ENV=production webpack",
+    "dev": "cross-env NODE_ENV=development webpack serve --inline --content-base dev-build/ --host xxx.xxx.xxx.xxx --port xxxx --open",
+    "dev2": "webpack-dev-server --inline --content-base dev-build/ --host xxx.xxx.xxx.xxx --port xxxx --open"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/akseonowww/pizza-in-nijnii.git"
+    "url": "git+https://github.com/akseonowww/vkus-vecherinki.git"
   },
+  "keywords": [
+    "pizza",
+    "sushi"
+  ],
   "author": "Akseonowww Ruslan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/akseonowww/pizza-in-nijnii/issues"
+    "url": "https://github.com/akseonowww/vkus-vecherinki/issues"
   },
-  "homepage": "https://github.com/akseonowww/pizza-in-nijnii#readme",
-  "dependencies": {
-    "bootstrap-icons": "^1.4.0"
-  },
+  "homepage": "https://github.com/akseonowww/vkus-vecherinki#readme",
+  "private": true,
+  "browserslist": "> 0.25%, not dead",
   "devDependencies": {
-    "prettier": "^2.2.1"
+    "@babel/core": "7.14.0",
+    "@babel/preset-env": "7.14.0",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "8.2.2",
+    "clean-webpack-plugin": "4.0.0-alpha.0",
+    "copy-webpack-plugin": "8.1.1",
+    "cross-env": "7.0.3",
+    "css-loader": "5.2.4",
+    "eslint": "^7.25.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-loader": "^4.0.2",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "5.3.1",
+    "mini-css-extract-plugin": "1.6.0",
+    "node-sass": "5.0.0",
+    "normalize.css": "^8.0.1",
+    "sass": "1.32.12",
+    "sass-loader": "11.0.1",
+    "style-loader": "2.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "5.36.2",
+    "webpack-cli": "4.6.0",
+    "webpack-dev-server": "3.11.2"
   },
-  "keywords": []
+  "dependencies": {
+    "@babel/polyfill": "7.12.1"
+  }
 }
