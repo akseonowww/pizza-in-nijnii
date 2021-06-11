@@ -29,6 +29,7 @@
   "devDependencies": {
     "@babel/core": "7.14.0",
     "@babel/preset-env": "7.14.0",
+    "@types/copy-webpack-plugin": "^8.0.0",
     "babel-eslint": "^10.1.0",
     "babel-loader": "8.2.2",
     "clean-webpack-plugin": "4.0.0-alpha.0",
@@ -47,8 +48,8 @@
     "sass-loader": "11.0.1",
     "style-loader": "2.0.0",
     "url-loader": "^4.1.1",
-    "webpack": "5.36.2",
-    "webpack-cli": "4.6.0",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.6.0",
     "webpack-dev-server": "3.11.2"
   },
   "dependencies": {

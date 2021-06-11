@@ -7,52 +7,40 @@
     
     .container {
         background-color: #F0F5FB;
-        padding-bottom: 0;
+        padding-bottom: 230px;
 
         @media only screen and (min-width: 320px) {
             padding-top: 16px;
-        }
-
-        @media only screen and (min-width: 480px) { 
-            padding-top: 0 !important;
-        }
-
-        @media only screen and (min-width: 768px) { 
-            padding-top: 30px !important;
-
-            .features__block {
-                bottom: -60px !important;
-                left: 178px !important;
-
-                @media only screen and (min-width: 1224px) { 
-                    right: 520px !important;
-                    bottom: -32px !important;
-
-                    bottom: -30px !important;
-                    right: 470px !important;
-                }
+            
+            @media only screen and (min-width: 480px) { 
+                padding-top: 0;
             }
         }
 
+        @media only screen and (min-width: 768px) { 
+            padding-top: 30px;
+            padding-bottom: 250px;
+        }
+
         @media only screen and (min-width: 1024px) {
-            padding-top: 100px !important;
+            padding-top: 80px;
+            padding-bottom: 300px;
+        }
+
+        @media only screen and (min-width: 1224px) {
+            padding-bottom: 330px;
         }
 
         &__img-main {
             margin-left: 6px;
             margin-bottom: -100px;
-            width: 110%;
+            width: 300px;
 
             @media only screen and (min-width: 480px) { 
-                width: 90%;
-                margin-left: 24px;
             }
 
             @media only screen and (min-width: 768px) { 
-                margin-left: 36px;
-                margin-bottom: -100px;
-                width: 60%;
-                position: absolute;
+                width: 400px;
             }
             
             @media only screen and (min-width: 1024px) { 
@@ -91,22 +79,31 @@
         .features {
             &__block {
                 position: absolute;
-                bottom: -120px;
+                display: flex;
+                z-index: 5;
+                left: 50%;
+                bottom: 27px;
+                margin-left: -150px;
 
-                @media only screen and (min-width: 480px) { 
-                    bottom: 12px;
-                    left: 100px;
+                @media only screen and (min-width: 1024px) {
+                    margin-left: -240px;
                 }
+                
+                & > div {
+                    position: absolute;
+                    bottom: -100px;
+                    left: 12px;
 
-                @media only screen and (min-width: 1024px) { 
-                    bottom: 20px !important;
-                    right: 310px;
-                    left: auto !important;
-                }
+                    @media only screen and (min-width: 1024px) {
+                        left: auto;
+                        right: 96px;
+                        bottom: -60px;
+                    }
 
-                @media only screen and (min-width: 1224px) { 
-                    bottom: -30px !important;
-                    right: 470px !important;
+                    @media only screen and (min-width: 1224px) {
+                        right: 61px;
+                        bottom: -70px;
+                    }
                 }
             }
 
@@ -126,9 +123,6 @@
         }   
 
         &__features {
-            position: relative;
-            z-index: 2;
-
             .button {
                 position: absolute;
                 margin-left: -25px;
@@ -138,7 +132,7 @@
 
                 @media only screen and (min-width: 1024px) {
                     transform: rotate(0);
-                    bottom: 176px !important;
+                    bottom: 176px;
                     left: -26px;
                 }
             }
@@ -168,22 +162,7 @@
         .background__item {
             position: absolute;
 
-            @media only screen and (min-width: 768px) {
-                &-3 {
-                    height: 110px !important;
-                    top: 145px !important;
-                }
-                
-                &-2 {
-                    height: 120px !important;
-                }
-
-                &-4 {
-                    height: 160px !important;
-                    right: -73px !important;
-                    top: 230px !important;
-                }
-
+            @media only screen and (min-width: 768px) {                
                 &-5 {
                     bottom: 81px;
                     width: 85px;
@@ -202,17 +181,32 @@
                     bottom: 198px;
                     width: 80px;
                     left: 100px;
+
+                    @media only screen and (min-width: 1024px) {
+                        width: 160px;
+                        bottom: 140px;
+                        left: 170px;
+                    }
                 }
 
                 &-8 {
                     bottom: 180px;
                     right: 110px;
                     height: 100px;
+
+                    @media only screen and (min-width: 1224px) {
+                        bottom: 70px;
+                        right: 190px;
+                        height: 120px;
+                    }
                 }
 
                 &-9 {
                     bottom: 41px;
                     right: -32px;
+
+                        right: -40px;
+                        bottom: 30px;
                 }
             }
 
@@ -239,14 +233,28 @@
                 left: -50px;
                 top: 160px;
                 z-index: 2;
-            }
+
+                @media only screen and (min-width: 768px) {                
+                    height: 120px;
+                }
+
+                @media only screen and (min-width: 1224px) {                
+                    height: 190px;
+                    left: -60px;
+                }
+             }
 
             &-3 {
                 height: 75px;
                 left: -23px;
                 top: 158px;
                 z-index: 1;
-                transform: rotate(-16deg)
+                transform: rotate(-16deg);
+
+                @media only screen and (min-width: 768px) {
+                    height: 110px;
+                    top: 145px;
+                }
             }
 
             &-4 {
@@ -254,6 +262,18 @@
                 right: -90px;
                 top: 334px;
                 z-index: 1;
+
+                @media only screen and (min-width: 768px) {                
+                    height: 160px;
+                    right: -73px;
+                    top: 230px;
+                }
+
+                @media only screen and (min-width: 1224px) {                
+                    right: 15px;
+                    height: 180px;
+                    top: 200px;
+                }            
             }
         }
     }

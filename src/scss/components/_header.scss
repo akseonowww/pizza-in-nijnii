@@ -46,11 +46,8 @@
     .header {
         display: flex;
         justify-content: center;
+        justify-content: space-between;
         align-items: center;
-
-        @media only screen and (min-width: 480px) {
-            justify-content: space-between;
-        }
 
         .user-location {
             justify-content: start;

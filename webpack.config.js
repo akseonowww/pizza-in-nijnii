@@ -46,14 +46,14 @@ module.exports = {
   devtool: isDev ? 'source-map' : false,
   devServer: {
     publicPath: '/',
-    host: '192.168.43.132',
-    proxy: {
-      '/api/**': {
-        target: 'localhost:8000',
-        secure: false,
-        changeOrigin: true,
-      }
-    },
+    // host: '192.168.43.132',
+    // proxy: {
+    //   '/api/**': {
+    //     target: 'localhost:8000',
+    //     secure: false,
+    //     changeOrigin: true,
+    //   }
+    // },
     contentBase: path.join(__dirname, 'dist'),
     port: 9000,
     compress: isDev
