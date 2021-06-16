@@ -224,38 +224,23 @@ a {
         width: 80%;
     }
 
-    & input {
-        &[type="radio"] {
-            display: none;
-        }
-
-        &[type="radio"]:checked + label {
-            background: $grdActive;
-            color: $bgMain;
-        }
-    }
-
     .pizza, 
     .sushi, 
     .beverages,
     .desserts,
     .salads {
         /* скрыть контент по умолчанию */
-        display: none;
+        display: none;   
         padding: 10px 15px;
         font-size: 16px;
+
+        &.active {
+            display: grid;
+        }
     }
 
-    /* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
-    #tab-btn-1:checked ~ .pizza,
-    #tab-btn-2:checked ~ .sushi,
-    #tab-btn-3:checked ~ .beverages,
-    #tab-btn-4:checked ~ .desserts,
-    #tab-btn-5:checked ~ .salads {
-        display: grid;
-    }
-
-    & label {
+    .nav__item {
+        cursor: pointer;
         display: inline-block;
         text-align: center;
         vertical-align: middle;
@@ -266,21 +251,14 @@ a {
         position: relative;
         top: 1px;
         transition: all .4s;
+        background: $grdActive;
+        color: $bgMain; 
         
-        &:not(:first-of-type) {
-            border-left: none;
-        }
-
         @media only screen and (min-width: 320px) {
             padding-top: 16px;
         }
+    }
 
-    }
-    
-    input[type="radio"]:checked + label {
-        background: $grdActive;
-        color: $bgMain;
-    }
 
     .button-fill {
         // height: 46px;
@@ -305,16 +283,20 @@ a {
             margin: 0 8px;
         }
 
-        // &.active {
-        //     background: $grdActive;
-        //     color: $bgMain;
-        // }
-
         &:hover {
             background: rgba($colorActive, 0.2);
             color: $colorActive;
         }
-    // }
+
+        &.active {
+            background: $grdActive;
+            color: $bgMain;
+
+            &:hover {
+                background: rgba($colorActive, 0.7);
+                transition: all .5s;
+            }
+        }
     }
 
     @media only screen and (min-width: 430px) {
